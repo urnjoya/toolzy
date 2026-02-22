@@ -3,11 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Toolzy - Professional online tools platform for text, development, security, and utility needs. Fast, reliable, and free.">
-    <title>Toolzy</title>
+    <meta name="description" content="Toolzy offers free online tools for text processing, development, security, encoding, formatting, and productivity. Fast, browser-based and privacy-focused utilities.">
+    <meta name="keywords" content="free online tools, developer tools, text tools, security tools, JSON formatter, base64 encoder, hash generator, online utilities">
+    <meta name="author" content="Toolzy">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Tools for Developers, Writers & Security | Toolzy">
+    <meta property="og:description" content="Fast, free, privacy-focused online tools for developers and creators.">
+    <meta property="og:url" content="https://www.toolzy.xyz">
+    <meta property="og:image" content="https://www.toolzy.xyz/assets/preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Tools | Toolzy">
+    <meta name="twitter:description" content="Professional browser-based tools. 100% free and secure.">
+    <meta name="twitter:image" content="https://www.toolzy.xyz/assets/preview.png">
+    <title>Free Online Tools For Developers, Writers & Security | Toolzy</title>
+    <link rel="canonical" href="https://www.toolzy.xyz">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link rel="stylesheet" href="css/main.css">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Toolzy",
+          "url": "https://www.toolzy.xyz",
+          "logo": "https://www.toolzy.xyz/assets/logo.png",
+          "sameAs": [
+            "https://www.toolzy.xyz"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Toolzy completely free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All tools on Toolzy are 100% free. There are no subscriptions, paywalls, or hidden charges. Every utility works directly in your browser without requiring registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you store or collect my data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. All tools run entirely in your browser. We do not store, track, or transmit your data to any server. Your information remains private and secure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No account or login is required. You can access and use all tools instantly without registration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the tools safe to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Since all processing happens inside your browser, your data never leaves your device."
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -19,7 +91,7 @@
                 more. Fast, reliable, and privacy-focused.</p>
             <div class="hero-actions">
                 <a href="#categories" class="btn btn-primary btn-lg">Explore Tools</a>
-                <a href="/about.html" class="btn btn-outline btn-lg">Learn More</a>
+                <a href="about.html" class="btn btn-outline btn-lg">Learn More</a>
             </div>
         </div>
     </section>
@@ -69,14 +141,6 @@
             </div>
         </div>
     </section>
-    <!-- <section class="section">
-        <div class="container">
-            <div class="ad-block ad-horizontal">
-                Advertisement
-            </div>
-        </div>
-    </section> -->
-
     <!-- ABOUT SECTION -->
     <section class="section">
         <div class="container">
@@ -115,7 +179,144 @@
             </div>
         </div>
     </section>
+    <!-- FAQ SECTION -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <div>
+                    <div class="card">
+                        <h2 class="card-title">Frequently Asked Questions</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Is Toolzy completely free to use?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        Yes. All tools on Toolzy are 100% free. There are no subscriptions, paywalls, or
+                                        hidden charges. Every utility works directly in your browser without requiring
+                                        registration.
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Do you store or collect my data?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        No. All tools on Toolzy run entirely in your browser (client-side processing).
+                                        We do not store, track, or transmit your data to any server. Your information
+                                        remains private and secure.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Do I need to create an account?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        No account or login is required. You can access and use all tools instantly
+                                        without registration.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What kind of tools does Toolzy offer?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        Toolzy provides tools across multiple categories including:
+                                        <ul>
+                                            <li>Text & Writing Tools</li>
+                                            <li>Developer Tools</li>
+                                            <li>Security Tools</li>
+                                            <li>Utility Tools</li>
+                                            Now tools are added regularly.
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Are the tools safe to use?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        Yes. Since all processing happens inside your browser, your data never leaves
+                                        your device. Toolzy does not upload or analyze user input.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Can I use Toolzy on mobile devices?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        Yes. Toolzy is fully responsive and optimized for mobile, tablet, and desktop
+                                        devices.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>How often are new tools added?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        We continuously update Toolzy with new features and utilities based on user
+                                        needs and trending requirements.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Can i suggest a new tool?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        Yes. You can contact us through the Contact page to suggest new tools or
+                                        features. We welcome feedback and ideas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Why should i use Toolzy instead of other online tool websites?</span>
+                                    <span class="accordion-icon">▼</span>
+                                </button>
+                                <div class="accordion-content">
+                                    <div class="accordion-body">
+                                        Toolzy focuses on:
+                                        <ul>
+                                            <li>Speed (lightweight design)</li>
+                                            <li>Privacy (no server processing)</li>
+                                            <li>Simplicity (no clutter or forced signups)</li>
+                                            <li>Completely free access</li>
+                                        </ul>
+                                        We prioritize usability and clean performance over aggressive ads or tracking.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- CTA SECTION -->
     <section class="section bg-secondary">
         <div class="container text-center">
@@ -176,9 +377,10 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/home-logic.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/home-logic.js" defer></script>
 </body>
 
 
 </html>
+
