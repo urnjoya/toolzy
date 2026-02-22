@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free find and replace tool - quickly find and replace text in your content.">
+    <title>Find & Replace - Free Online Tool | Toolzy</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/find-replace.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/" class="navbar-logo">Toolzy</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search tools...">
+                </div>
+            </div>
+            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
+            <div class="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="/about.html" class="navbar-link">About</a></li>
+                    <li><a href="/contact.html" class="navbar-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
+                <li class="breadcrumb-item"><a href="/text-tools.html" class="breadcrumb-link">Text Tools</a></li>
+                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
+                <li class="breadcrumb-item"><span class="breadcrumb-current">Find & Replace</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div class="category-quick-nav">
+        <div class="container">
+            <div class="category-buttons">
+                <a href="/text-tools.html" class="category-button active">📝 Text & Writing</a>
+                <a href="/developer-tools.html" class="category-button">💻 Developer Tools</a>
+                <a href="/security-tools.html" class="category-button">🔒 Security & Privacy</a>
+                <a href="/utility-tools.html" class="category-button">🛠️ Random & Utility</a>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="page-header page-header-sm">
+        <div class="container">
+            <h1 class="page-title">Find & Replace</h1>
+        </div>
+    </div>
+
+    <section class="section-sm">
+        <div class="container">
+            <div class="tool-interface">
+                <div class="tool-interface tool-interface-left">
+                    <div class="form-group">
+                        <!-- <textarea id="input-text" class="form-textarea" placeholder="Type or paste your text here..."
+                            rows="6" style="font-family: inherit;"></textarea> -->
+                        <div id="input-text" contenteditable="true" class="editor form-textarea"
+                            placeholder="Type or paste your text here..."></div>
+
+                    </div>
+                    <div class="result-card">
+                        <div>
+                            <div class="o-line">
+                                <!-- Result Count -->
+                                <div class="result-count">12 of 30</div>
+                            </div>
+                            <div class="a-line">
+                                <div class="a1-line">
+                                    <!-- Find -->
+                                    <div class="find-input fin-a">
+                                        <input type="text" id="find-text" class="form-input" placeholder="Find">
+                                    </div>
+                                    <!-- Previous match -->
+                                    <div class="previous-match fin-b">&#8593;</div>
+                                </div>
+                                <div class="a2-line">
+                                    <div class="replace-input fin-a">
+                                        <input type="text" id="replace-text" class="form-input"
+                                            placeholder="Replacement">
+                                    </div>
+                                    <!-- Next Match -->
+                                    <div class="next-match fin-b">&#8595;</div>
+                                </div>
+                            </div>
+                            <div class="b-line">
+                                <!-- Replace One By One -->
+                                <button class="btn btn-secondary replace-one-btn">Replace</button>
+                                <!-- Replace All -->
+                                <button class="btn btn-secondary replace-all-btn">Replace All</button>
+                            </div>
+                            <div class="c-line">
+                                <div class="c1-line">
+                                    <!-- Match case -->
+                                    <div class="match-case">
+                                        <label>
+                                            <input type="checkbox" id="match-case-checkbox">
+                                            Match Case
+                                        </label>
+                                    </div>
+                                    <!-- Match Whole Word -->
+                                    <div class="match-whole-word">
+                                        <label>
+                                            <input type="checkbox" id="match-whole-word-checkbox">
+                                            Match Whole Word
+                                        </label>
+                                    </div>
+
+                                    <!-- Find in Selection -->
+                                    <div class="find-in-selection">
+                                        <label>
+                                            <input type="checkbox" id="find-in-selection-checkbox">
+                                            In Selection
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="c2-line">
+                                    <button onclick="copyResult()" class="copy-btn" id="copy-btn">📋 Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ad-block ad-block-horizontal">
+                    <p>Advertisement Space</p>
+                </div>
+
+                <div class="card">
+                    <h2 class="card-title">How to Use</h2>
+                    <div class="card-body">
+                        <ol
+                            style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
+                            <li>Enter your text in the input field.</li>
+                            <li>Click any of the buttons in the Find & Replace section.</li>
+                            <li>Copy the result using the copy button.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-section-title">Toolzy</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: var(--space-md);">
+                        Professional online tools for everyone. Fast, free, and privacy-focused.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="/text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="/developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="/security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="/utility-tools.html" class="footer-link">Random & Utility</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html" class="footer-link">About Us</a></li>
+                        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Toolzy. All rights reserved. Built with care for productivity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script>
+        const editor = document.getElementById('input-text');
+        const findInput = document.getElementById('find-text');
+        const replaceInput = document.getElementById('replace-text');
+        const resultCount = document.querySelector('.result-count');
+
+        const matchCaseCheckbox = document.getElementById('match-case-checkbox');
+        const wholeWordCheckbox = document.getElementById('match-whole-word-checkbox');
+
+        let matches = [];
+        let currentIndex = -1;
+
+        /* -------------------- GET CLEAN TEXT -------------------- */
+        function getText() {
+            return editor.innerText;
+        }
+
+        /* -------------------- SET HTML -------------------- */
+        function setHTML(html) {
+            editor.innerHTML = html;
+        }
+
+        /* -------------------- ESCAPE REGEX -------------------- */
+        function escapeRegex(str) {
+            return str.replace(/[.*+?^${ }()|[\]\\]/g, '\\$&');
+        }
+
+        /* -------------------- BUILD REGEX -------------------- */
+        function buildRegex() {
+            let search = findInput.value;
+            if (!search) return null;
+
+            search = escapeRegex(search);
+
+            if (wholeWordCheckbox.checked) {
+                search = `\\b${search}\\b`;
+            }
+
+            const flags = matchCaseCheckbox.checked ? 'g' : 'gi';
+            return new RegExp(search, flags);
+        }
+
+        /* -------------------- FIND + HIGHLIGHT -------------------- */
+        function findMatches() {
+            const text = getText();
+            const regex = buildRegex();
+
+            matches = [];
+            currentIndex = -1;
+
+            if (!regex) {
+                setHTML(text);
+                resultCount.textContent = "0 of 0";
+                return;
+            }
+
+            let match;
+            while ((match = regex.exec(text)) !== null) {
+                matches.push({
+                    index: match.index,
+                    length: match[0].length
+                });
+            }
+
+            if (matches.length === 0) {
+                setHTML(text);
+                resultCount.textContent = "0 of 0";
+                return;
+            }
+
+            // highlight all
+            const highlighted = text.replace(regex, m => `<mark>${m}</mark>`);
+            setHTML(highlighted);
+
+            currentIndex = 0;
+            highlightActive();
+
+            resultCount.textContent = `1 of ${matches.length}`;
+        }
+
+        /* -------------------- HIGHLIGHT ACTIVE -------------------- */
+        function highlightActive() {
+            const allMarks = editor.querySelectorAll('mark');
+            allMarks.forEach(m => m.style.background = 'yellow');
+
+            if (allMarks[currentIndex]) {
+                allMarks[currentIndex].style.background = 'orange';
+                allMarks[currentIndex].scrollIntoView({ block: "center" });
+            }
+
+            resultCount.textContent = `${currentIndex + 1} of ${matches.length}`;
+        }
+
+        /* -------------------- NEXT / PREVIOUS -------------------- */
+        document.querySelector('.next-match').addEventListener('click', () => {
+            if (matches.length === 0) return;
+            currentIndex = (currentIndex + 1) % matches.length;
+            highlightActive();
+        });
+
+        document.querySelector('.previous-match').addEventListener('click', () => {
+            if (matches.length === 0) return;
+            currentIndex = (currentIndex - 1 + matches.length) % matches.length;
+            highlightActive();
+        });
+
+        /* -------------------- REPLACE ONE -------------------- */
+        document.querySelector('.replace-one-btn').addEventListener('click', () => {
+            if (matches.length === 0) return;
+
+            const marks = editor.querySelectorAll('mark');
+            if (!marks[currentIndex]) return;
+
+            marks[currentIndex].outerHTML = replaceInput.value;
+
+            findMatches();
+        });
+
+        /* -------------------- REPLACE ALL -------------------- */
+        document.querySelector('.replace-all-btn').addEventListener('click', () => {
+            const regex = buildRegex();
+            if (!regex) return;
+
+            const newText = getText().replace(regex, replaceInput.value);
+            setHTML(newText);
+
+            findMatches();
+        });
+
+        /* -------------------- LIVE SEARCH -------------------- */
+        findInput.addEventListener('input', findMatches);
+        matchCaseCheckbox.addEventListener('change', findMatches);
+        wholeWordCheckbox.addEventListener('change', findMatches);
+
+        /* -------------------- COPY -------------------- */
+        function copyResult() {
+            const text = getText();
+            if (text === '') {
+                showNotification('No result to copy', 'error');
+                return;
+            }
+            copyToClipboard(text, document.getElementById('copy-btn'));
+        }
+    </script>
+</body>
+
+</html>
