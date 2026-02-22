@@ -1,0 +1,187 @@
+@media (min-width: 768px) {
+    .tool-interface-left {
+        display: flex;
+        gap: 20px;
+    }
+
+    .result-card {
+        padding: var(--space-xs);
+    }
+
+    .form-group {
+        max-width: 70%;
+        max-height: 100%;
+        flex: 70%;
+        margin: 0;
+    }
+
+    .result-card {
+        flex: 30%;
+        margin: 0;
+
+    }
+
+    .o-line {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .result-count {
+        width: max-content;
+        background-color: rgb(209, 207, 204);
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .a1-line,
+    .a2-line {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+
+    .fin-a {
+        flex: 80%;
+    }
+
+    .fin-b {
+        text-align: center;
+        flex: 10%;
+        font-size: x-large;
+        font-weight: bolder;
+        border: 1px solid whitesmoke;
+        border-radius: 20%;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .fin-a input {
+        width: 100%;
+
+    }
+
+    .c-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c1-line {
+        flex: 60%;
+    }
+
+    .c2-line {
+        flex: 40%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*  */
+@media (max-width: 768px) {
+    .result-card {
+        padding: var(--space-xs);
+    }
+
+    .form-group {
+        margin: 0;
+        margin-bottom: 7px;
+    }
+
+    .result-card {
+        flex: 30%;
+        margin: 0;
+    }
+
+    .editor {
+        width: 100%;
+        height: 200px;
+        /* Fixed height */
+        padding: 5px;
+
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        overflow: auto;
+        /* Enable both scrollbars */
+
+        white-space: pre;
+        /* Important for horizontal scroll */
+        word-wrap: normal;
+        /* Disable auto wrapping */
+        overflow-wrap: normal;
+        /*  */
+        resize: none;
+        /* Prevent manual resize */
+    }
+
+
+    .o-line {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .result-count {
+        width: max-content;
+        background-color: rgb(209, 207, 204);
+        padding: 4px;
+        border-radius: 4px;
+
+    }
+
+    .a1-line,
+    .a2-line {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 2px;
+    }
+
+    .fin-a {
+        flex: 80%;
+    }
+
+    .fin-b {
+        text-align: center;
+        flex: 10%;
+        font-size: x-large;
+        font-weight: bolder;
+        border: 1px solid whitesmoke;
+        border-radius: 20%;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .fin-a input {
+        width: 100%;
+
+    }
+
+    .c-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c1-line {
+        flex: 65%;
+        border-right: 1px solid peachpuff;
+    }
+
+    .c2-line {
+        flex: 35%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*  */
+.o-line,
+.a1-line,
+.a2-line,
+.b-line {
+    margin-bottom: 4px;
+}
