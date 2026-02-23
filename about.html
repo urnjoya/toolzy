@@ -10,7 +10,7 @@
   <meta name="author" content="Toolzy">
   <meta name="robots" content="index, follow">
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
   <meta property="og:title" content="About Page | Toolzy">
   <meta property="og:description" content="Fast, free, privacy-focused online tools for developers and creators.">
   <meta property="og:url" content="https://www.toolzy.xyz/about.html">
@@ -28,6 +28,53 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="//www.googletagmanager.com">
   <link rel="stylesheet" href="css/main.css">
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toolzy",
+  "url": "https://www.toolzy.xyz",
+  "logo": "https://www.toolzy.xyz/assets/logo.png",
+  "description": "Toolzy is a free online tools platform providing browser-based utilities for text processing, development, security, and productivity.",
+  "foundingDate": "2026",
+  "sameAs": [
+    "https://www.toolzy.xyz"
+  ]
+}
+</script>
+  <!-- About Page Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Toolzy",
+  "url": "https://www.toolzy.xyz/about.html",
+  "description": "Learn about Toolzy, a free online tools platform offering privacy-focused browser-based utilities for developers, writers, and everyday users.",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Toolzy"
+  }
+}
+</script>
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://www.toolzy.xyz"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "About Us",
+    "item": "https://www.toolzy.xyz/about.html"
+  }]
+}
+</script>
 </head>
 
 <body>
@@ -197,9 +244,10 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 
 </html>
+
 
