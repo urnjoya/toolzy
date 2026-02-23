@@ -3,16 +3,80 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Toolzy - get in touch with questions, feedback, or suggestions.">
-  <title>Contact Us - Toolzy</title>
-  <link rel="stylesheet" href="/css/main.css">
+  <meta name="description" content="Contact Toolzy for support, bug reports, feature requests, or business inquiries. We typically respond within 24–48 hours.">
+  <meta name="keywords" content="toolzy, contact toolzy, contact page of toolzy">
+  <meta name="author" content="Toolzy">
+  <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Contact Page | Toolzy">
+  <meta property="og:description" content="Contact Toolzy - get in touch with questions, feedback, or suggestions.">
+  <meta property="og:url" content="https://www.toolzy.xyz/contact.html">
+  <meta property="og:image" content="https://www.toolzy.xyz/assets/preview.png">
+
+   <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Page | Toolzy">
+  <meta name="twitter:description" content="Get in touch with Toolzy for support, feedback, bug reports, or partnership inquiries.">
+  <meta name="twitter:image" content="https://www.toolzy.xyz/assets/preview.png">
+  <title>Contact Us | Toolzy</title>
+  <link rel="canonical" href="https://www.toolzy.xyz/contact.html">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Contact Page schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Toolzy",
+  "url": "https://www.toolzy.xyz/contact.html",
+  "description": "Contact Toolzy for support, bug reports, feature requests, or business inquiries."
+}
+</script>
+  <!-- Organization with Contact -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toolzy",
+  "url": "https://www.toolzy.xyz",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "contact@toolzy.com",
+    "availableLanguage": "English"
+  }]
+}
+</script>
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://www.toolzy.xyz"
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Contact",
+    "item": "https://www.toolzy.xyz/contact.html"
+  }]
+}
+</script>
 </head>
 
 <body>
   <nav class="navbar">
     <div class="container navbar-container">
-      <a href="/" class="navbar-logo">Toolzy</a>
+      <a href="index.html" class="navbar-logo">Toolzy</a>
       <div class="navbar-search">
         <div class="search-input">
           <span class="search-icon">🔍</span>
@@ -22,8 +86,8 @@
       <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
       <div class="navbar-menu">
         <ul class="navbar-links">
-          <li><a href="/about.html" class="navbar-link">About</a></li>
-          <li><a href="/contact.html" class="navbar-link">About</a></li>
+          <li><a href="about.html" class="navbar-link">About</a></li>
+          <li><a href="contact.html" class="navbar-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -32,7 +96,7 @@
   <div class="breadcrumb">
     <div class="container">
       <ul class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+        <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Home</a></li>
         <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
         <li class="breadcrumb-item"><span class="breadcrumb-current">Contact</span></li>
       </ul>
@@ -42,10 +106,10 @@
   <div class="category-quick-nav">
     <div class="container">
       <div class="category-buttons">
-        <a href="/text-tools.html" class="category-button">📝 Text & Writing</a>
-        <a href="/developer-tools.html" class="category-button">💻 Developer Tools</a>
-        <a href="/security-tools.html" class="category-button">🔒 Security & Privacy</a>
-        <a href="/utility-tools.html" class="category-button">🛠️ Random & Utility</a>
+        <a href="text-tools.html" class="category-button">📝 Text & Writing</a>
+        <a href="developer-tools.html" class="category-button">💻 Developer Tools</a>
+        <a href="security-tools.html" class="category-button">🔒 Security & Privacy</a>
+        <a href="utility-tools.html" class="category-button">🛠️ Random & Utility</a>
       </div>
     </div>
   </div>
@@ -123,7 +187,7 @@
               <p>Before reaching out, you might find answers to common questions in our documentation or tool-specific
                 help sections.</p>
               <p style="margin-top: var(--space-md);">
-                <a href="/" class="btn btn-secondary">Browse All Tools</a>
+                <a href="index.html#category" class="btn btn-secondary">Browse All Tools</a>
               </p>
             </div>
           </div>
@@ -143,27 +207,27 @@
         <div>
           <h4 class="footer-section-title">Categories</h4>
           <ul class="footer-links">
-            <li><a href="/text-tools.html" class="footer-link">Text & Writing Tools</a></li>
-            <li><a href="/developer-tools.html" class="footer-link">Developer Tools</a></li>
-            <li><a href="/security-tools.html" class="footer-link">Security & Privacy</a></li>
-            <li><a href="/utility-tools.html" class="footer-link">Random & Utility</a></li>
+            <li><a href="text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+            <li><a href="developer-tools.html" class="footer-link">Developer Tools</a></li>
+            <li><a href="security-tools.html" class="footer-link">Security & Privacy</a></li>
+            <li><a href="utility-tools.html" class="footer-link">Random & Utility</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-section-title">Company</h4>
           <ul class="footer-links">
-            <li><a href="/about.html" class="footer-link">About Us</a></li>
-            <li><a href="/contact.html" class="footer-link">Contact</a></li>
-            <li><a href="/changelog.html" class="footer-link">Changelog</a></li>
-            <li><a href="/sitemap.html" class="footer-link">Sitemap</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="changelog.html" class="footer-link">Changelog</a></li>
+            <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-section-title">Legal</h4>
           <ul class="footer-links">
-            <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
-            <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
-            <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+            <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
           </ul>
         </div>
       </div>
@@ -173,8 +237,9 @@
     </div>
   </footer>
 
-  <script src="/js/main.js"></script>
-  <script src="/js/contact.js"></script>
+  <script src="js/main.js" defer ></script>
+  <script src="js/contact.js" defer ></script>
 </body>
+
 
 </html>
