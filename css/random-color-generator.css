@@ -1,0 +1,98 @@
+.page-title {
+    font-size: 1.5rem;
+}
+.pg-1{
+    width: 100%;
+    height: fit-content;
+}
+.pg-1 div{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pg-1 label{
+    font-weight: bold;
+}
+.pg-1 input{
+    padding: 2px 5px;
+    border: rad;
+}
+
+.pg-2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#result {
+    width: 100%;
+    height: max-content;
+    max-width: 100%;
+    max-height: 100%;
+    border-top: 1px whitesmoke solid;
+    border-radius: 5%;
+    padding: 10% 0;
+    margin: 15% 0% 7% 0%;
+}
+
+.color-card {
+    border-bottom: 1px whitesmoke solid;
+    border-radius: 5%;
+    margin-bottom: 9%;
+}
+
+.color-preview {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+/*  */
+
+.color-info {
+    width: fit-content;
+    height: max-content;
+    /* border: 1px gold solid; */
+    margin: 7% auto;
+}
+
+.color-info strong {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 3%;
+}
+
+@media (min-width: 768px) {
+
+    .tool-interface,
+    .tool-main {
+        margin: 0;
+        margin-bottom: 10%;
+        padding: 0;
+    }
+
+    .tool-main {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .pg-1 {
+        padding: 20px 1px;
+        height: 200px;
+        flex: 40%;
+    }
+
+    .pg-2 {
+        margin: 0;
+        flex: 60%;
+    }
+    #result{
+        margin-top: 0;
+    }
+}
