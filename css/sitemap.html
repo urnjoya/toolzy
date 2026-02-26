@@ -1,0 +1,94 @@
+/* ==============================
+   Typography
+================================= */
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.page-description {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* ==============================
+   Card
+================================= */
+.card {
+  margin-top: var(--space-xl);
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.card-body {
+  padding: var(--space-md);
+}
+
+/* ==============================
+   Table
+================================= */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Important for mobile */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px; /* Prevent breaking layout */
+}
+
+thead {
+  background: #f1f3f5;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+th {
+  font-weight: 600;
+}
+
+tr {
+  border-bottom: 1px solid #eee;
+}
+
+a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   Mobile Optimization
+================================= */
+@media (max-width: 768px) {
+
+  .section {
+    padding: var(--space-lg) var(--space-sm);
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .card-body {
+    padding: var(--space-sm);
+  }
+}
