@@ -77,7 +77,7 @@
 
     /* Layout */
     --container-max-width: 1280px;
-    --container-padding: var(--space-md);
+    --container-padding: var(--space-xs);
 
     /* Transitions */
     --transition-fast: 150ms ease;
@@ -115,8 +115,12 @@ h6 {
     margin-bottom: var(--space-md);
 }
 
-h1 {
+.page-title {
     font-size: 2.5rem;
+    border-top: 1px wheat solid;
+    border-bottom: 1px var(--color-secondary-light) solid;
+    border-radius: 30%;
+    padding: 10px 0;
 }
 
 h2 {
@@ -149,6 +153,7 @@ a {
     text-decoration: none;
     transition: color var(--transition-fast);
 }
+
 
 a:hover {
     color: var(--color-primary-dark);
@@ -223,11 +228,11 @@ code {
 
 .navbar {
     background: var(--color-bg-primary);
-    border-bottom: 1px solid var(--color-border);
+    /* border-bottom: 1px solid var(--color-border); */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: var(--shadow-sm);
+    /* box-shadow: var(--shadow-sm); */
 }
 
 .navbar-container {
@@ -244,6 +249,16 @@ code {
     color: var(--color-primary);
     text-decoration: none;
     flex-shrink: 0;
+    /*  */
+    /* Linear gradient: 50% color1, 50% color2 */
+    background: linear-gradient(to right, wheat 50%, var(--color-secondary-light) 50%);
+
+    /* Background ko text ke shape mein katein */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Text color ko transparent banayein taaki background dikhe */
+    color: transparent;
 }
 
 .navbar-logo:hover {
@@ -265,6 +280,7 @@ code {
     display: flex;
     gap: var(--space-lg);
     list-style: none;
+    cursor: pointer;
 }
 
 .navbar-link {
@@ -283,6 +299,7 @@ code {
     border: none;
     cursor: pointer;
     padding: var(--space-xs);
+
 }
 
 .mobile-menu-icon {
@@ -291,6 +308,7 @@ code {
     background: var(--color-text-primary);
     display: block;
     position: relative;
+
 }
 
 .mobile-menu-icon::before,
@@ -309,6 +327,20 @@ code {
 
 .mobile-menu-icon::after {
     top: 8px;
+}
+
+/*  */
+.mobile-menu-icon,
+.mobile-menu-icon::before,
+.mobile-menu-icon::after {
+    width: 24px;
+    height: 2px;
+    /* Yahan gradient apply ho raha hai: 50% Red, 50% Blue */
+    background: linear-gradient(90deg, var(--color-secondary-light) 50%, wheat 50%);
+    display: block;
+    position: relative;
+    content: '';
+    /* Pseudo-elements ke liye zaroori hai */
 }
 
 /* ============================================
@@ -422,6 +454,18 @@ code {
 .btn-primary {
     background: var(--color-primary);
     color: white;
+}
+
+.btn-theme-a {
+    background-color: var(--color-secondary-light);
+    color: white;
+}
+
+.btn-theme-a:hover {
+    background: var(--color-primary-dark);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
@@ -668,7 +712,7 @@ code {
 
 .search-input input {
     width: 100%;
-    padding: var(--space-sm) var(--space-md) var(--space-sm) 2.75rem;
+    padding: var(--space-xs) var(--space-xs) var(--space-xs) 2.75rem;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-full);
     font-size: 0.875rem;
@@ -689,6 +733,7 @@ code {
     color: var(--color-text-tertiary);
     pointer-events: none;
 }
+
 
 /* ============================================
    RESULT DISPLAY
@@ -724,7 +769,9 @@ code {
     line-height: 1.6;
     white-space: pre-wrap;
     word-break: break-word;
-    max-height: 400px;
+    height: 160px;
+    max-height: 160px;
+    /* max-height: max-content; */
     overflow-y: auto;
 }
 
@@ -986,7 +1033,7 @@ code {
 .footer {
     background: var(--color-bg-secondary);
     border-top: 1px solid var(--color-border);
-    padding: var(--space-3xl) 0 var(--space-xl);
+    padding: var(--space-xl) 0 0 0;
     margin-top: var(--space-4xl);
 }
 
@@ -994,7 +1041,7 @@ code {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-xl);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-xs);
 }
 
 .footer-section-title {
@@ -1021,7 +1068,7 @@ code {
 }
 
 .footer-bottom {
-    padding-top: var(--space-xl);
+    padding-top: var(--space-xs);
     border-top: 1px solid var(--color-border);
     text-align: center;
     color: var(--color-text-tertiary);
@@ -1069,17 +1116,9 @@ code {
 .page-header {
     padding: var(--space-xs) 0;
     text-align: center;
-    background: var(--color-bg-secondary);
-    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg-primary);
 }
 
-.page-header-sm {
-    /* padding: var(--space-xs) 0; */
-}
-
-.page-title {
-    /* margin-bottom: var(--space-sm); */
-}
 
 .page-description {
     display: none;
@@ -1424,4 +1463,105 @@ code {
     font-size: small;
     text-align: justify;
     margin: 10% 5% 0% 5%;
+}
+
+.no-select {
+    user-select: none;
+}
+
+/* ============================================
+   CATEGORY MODAL POPUP
+   ============================================ */
+
+.category-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 2000;
+}
+
+.category-modal.active {
+    display: flex;
+}
+
+.category-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.category-modal-content {
+    position: relative;
+    background: var(--color-bg-primary);
+    width: 95%;
+    max-width: 500px;
+    margin: 100px auto;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    padding: var(--space-xl);
+    animation: modalFade var(--transition-base);
+    display: flex;
+    flex-direction: column;
+
+    max-height: 100vh;
+    /* IMPORTANT */
+    overflow: scroll;
+}
+
+.category-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+}
+
+.category-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+}
+
+.category-close:hover {
+    color: var(--color-error);
+}
+
+.category-popup-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    transition: all var(--transition-fast);
+}
+
+.category-popup-card:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.popup-icon {
+    font-size: 2rem;
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
