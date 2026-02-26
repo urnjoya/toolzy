@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toolzy offers free online tools for text processing, development, security, encoding, formatting, and productivity. Fast, browser-based and privacy-focused utilities.">
+    <meta name="keywords" content="free online tools, developer tools, text tools, security tools, JSON formatter, base64 encoder, hash generator, online utilities">
+    <meta name="author" content="Toolzy">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Tools for Developers, Writers & Security | Toolzy">
+    <meta property="og:description" content="Fast, free, privacy-focused online tools for developers and creators.">
+    <meta property="og:url" content="https://www.toolzy.xyz">
+    <meta property="og:image" content="https://www.toolzy.xyz/assets/preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Tools | Toolzy">
+    <meta name="twitter:description" content="Professional browser-based tools. 100% free and secure.">
+    <meta name="twitter:image" content="https://www.toolzy.xyz/assets/preview.png">
+    <title>Rich Text & Markdown - Free Online Tool | Toolzy</title>
+    <link rel="canonical" href="https://www.toolzy.xyz">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/number-conversion.css">
+    <link rel="stylesheet" href="../../css/rich-text-markdown.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../../" class="navbar-logo">Toolzy</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search tools...">
+                </div>
+            </div>
+            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
+            <div class="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="../../about.html" class="navbar-link">About</a></li>
+                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
+                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
+                <li class="breadcrumb-item"><a href="../../text-tools.html" class="breadcrumb-link">Text Tools</a></li>
+                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
+                <li class="breadcrumb-item"><span class="breadcrumb-current">Number Conversion</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-header page-header-sm">
+        <div class="container">
+            <h1 class="page-title">Rich Text Markdown</h1>
+        </div>
+    </div>
+
+    <section class="section-sm">
+        <div class="container">
+            <div class="tool-interface tool-main">
+                <div class="s1">
+                    <div class="tool-interface ncop">
+                        <div class="sele" id="fr">
+                            <label for="base-from">From</label>
+                            <select name="base-from" id="base-from">
+                                <option selected value=" ">--Select--</option>
+                                <option value="rich">Rich Text</option>
+                                <option value="markdown">Markdown</option>
+                            </select>
+                        </div>
+                        <div class="sele" id="to">
+                            <label for="base-to">to</label>
+                            <select name="base-to" id="base-to">
+                                <option selected value=" ">--Select--</option>
+                                <option value="rich">Rich Text</option>
+                                <option value="markdown">Markdown</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div id="input-text" contenteditable="true" class="form-textarea editor"></div>
+                    </div>
+
+                    <div class="grid grid-cols-auto" style="gap: var(--space-sm);">
+                        <button onclick="perform()" class="btn btn-primary">Convert</button>
+                    </div>
+                </div>
+                <div class="s2">
+                    <div class="result-card">
+                        <div class="result-header">
+                            <span class="result-label">Result:</span>
+                            <button onclick="copyResultEditor()" class="copy-btn" id="copy-btn">📋 Copy</button>
+                        </div>
+                        <div class="result-content" id="result">Your result will appear here...</div>
+                    </div>
+
+                    <button onclick="clearAllEditor()" class="btn btn-secondary mt-lg" style="width: 100%;">Clear All</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="card-title">How to Use</h2>
+                <div class="card-body">
+                    <ol style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
+                        <li>Enter your text in the input field.</li>
+                        <li>Click to convert your text button.</li>
+                        <li>Copy the result using the copy button.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-section-title">Toolzy</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: var(--space-md);">
+                        Professional online tools for everyone. Fast, free, and privacy-focused.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="../../developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="../../security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="../../utility-tools.html" class="footer-link">Random & Utility</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
+                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="../../changelog.html" class="footer-link">Changelog</a></li>
+                        <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Toolzy. All rights reserved. Built with care for productivity.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"defer ></script>
+    <script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/rich-text-markdown.js" defer></script>
+    <script src="../../js/mj.js" defer></script>
+</body>
+</html>
