@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .editor {
+        width: 100%;
+        height: 200px;
+        /* Fixed height */
+        padding: 5px;
+
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        overflow: auto;
+        /* Enable both scrollbars */
+
+        white-space: pre;
+        /* Important for horizontal scroll */
+        word-wrap: normal;
+        /* Disable auto wrapping */
+        overflow-wrap: normal;
+        /*  */
+        resize: none;
+        /* Prevent manual resize */
+    }
+}

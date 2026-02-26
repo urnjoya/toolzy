@@ -1,0 +1,50 @@
+.ncop {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+
+.ncop label {
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.ncop select {
+    display: block;
+    font-size: large;
+}
+
+@media (min-width:768px) {
+    .tool-interface {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .tool-main {
+        display: flex;
+    }
+
+    .s1 {
+        flex: 49%;
+        margin-right: 2%;
+
+    }
+
+    .s2 {
+        flex: 49%;
+        align-self: self-end;
+    }
+
+    .result-card {
+        margin-top: 0;
+    }
+
+    .form-textarea {
+        rows: 10;
+    }
+
+}
