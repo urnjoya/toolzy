@@ -81,12 +81,17 @@ a:hover {
   .page-title {
     font-size: 1.5rem;
   }
-
+th{
+   display: none;
+}
   th,
   td {
     padding: 10px;
     font-size: 0.85rem;
   }
+   td{
+   width:100%;
+   }
 
   .card-body {
     padding: var(--space-sm);
