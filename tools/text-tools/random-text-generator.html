@@ -3,17 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Free random text generator tool - generate random text for testing and development.">
+    <meta name="description" content="Toolzy offers generate random color">
+    <meta name="author" content="Toolzy">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Random Color Generate | Toolzy">
+    <meta property="og:description" content="Toolzy offers generate random color">
+    <meta property="og:url" content="https://www.toolzy.xyz/random-color-generator.html">
+    <meta property="og:image" content="https://www.toolzy.xyz/assets/preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Random Color Generate | Toolzy">
+    <meta name="twitter:description" content="Toolzy offers generate random color">
+    <meta name="twitter:image" content="https://www.toolzy.xyz/assets/preview.png">
     <title>Random Text Generator - Free Online Tool | Toolzy</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://www.toolzy.xyz/random-color-generate.html">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
-            <a href="/" class="navbar-logo">Toolzy</a>
+            <a href="../../" class="navbar-logo">Toolzy</a>
             <div class="navbar-search">
                 <div class="search-input">
                     <span class="search-icon">🔍</span>
@@ -23,44 +43,18 @@
             <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="/about.html" class="navbar-link">About</a></li>
-                    <li><a href="/contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="../../about.html" class="navbar-link">About</a></li>
+                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                    <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="breadcrumb">
-        <div class="container">
-            <ul class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
-                <li class="breadcrumb-item"><a href="/text-tools.html" class="breadcrumb-link">Text Tools</a></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-current">Random Text Generator</span></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- <div class="category-quick-nav">
-        <div class="container">
-            <div class="category-buttons">
-                <a href="/text-tools.html" class="category-button active">📝 Text & Writing</a>
-                <a href="/developer-tools.html" class="category-button">💻 Developer Tools</a>
-                <a href="/security-tools.html" class="category-button">🔒 Security & Privacy</a>
-                <a href="/utility-tools.html" class="category-button">🛠️ Random & Utility</a>
-            </div>
-        </div>
-    </div> -->
-
+    <!-- Heading -->
     <div class="page-header page-header-sm">
-        <div class="container">
-            <h1 class="page-title">Random Text Generator</h1>
-            <!-- <p class="page-description">Convert text to UPPERCASE, lowercase, Title Case, Sentence case, tOOGLE cASE,
-                PascalCase, ect.</p> -->
-        </div>
+        <h1 class="page-title">Random Text Generator</h1>
     </div>
-
+    <!-- Main -->
     <section class="section-sm">
         <div class="container">
             <div class="tool-interface">
@@ -102,7 +96,8 @@
                         <span class="result-label">Result:</span>
                         <button onclick="copyResult()" class="copy-btn" id="copy-btn">📋 Copy</button>
                     </div>
-                    <div class="result-content" id="result" style="white-space: pre-wrap;">Your generated text will appear here...</div>
+                    <div class="result-content" id="result" style="white-space: pre-wrap;">Your generated text will
+                        appear here...</div>
                 </div>
 
                 <button onclick="clearAll()" class="btn btn-secondary mt-lg" style="width: 100%;">Clear All</button>
@@ -124,7 +119,39 @@
             </div>
         </div>
     </section>
+    <!-- Category Popup Modal -->
+    <div class="category-modal" id="categoryModal">
+        <div class="category-modal-overlay" id="categoryOverlay"></div>
+        <div class="category-modal-content">
+            <div class="category-modal-header">
+                <h3>Select Category</h3>
+                <button class="category-close" id="categoryClose">&times;</button>
+            </div>
 
+            <div class="category-modal-body grid grid-cols-2 gap-lg">
+                <a href="../../text-tools.html" class="category-popup-card">
+                    <div class="popup-icon">✍️</div>
+                    <span>Text Tools</span>
+                </a>
+
+                <a href="../../developer-tools.html" class="category-popup-card">
+                    <div class="popup-icon">💻</div>
+                    <span>Developer Tools</span>
+                </a>
+
+                <a href="../../security-tools.html" class="category-popup-card">
+                    <div class="popup-icon">🔐</div>
+                    <span>Security</span>
+                </a>
+
+                <a href="../../utility-tools.html" class="category-popup-card">
+                    <div class="popup-icon">🎲</div>
+                    <span>Utility</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -137,270 +164,38 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="/text-tools.html" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="/developer-tools.html" class="footer-link">Developer Tools</a></li>
-                        <li><a href="/security-tools.html" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="/utility-tools.html" class="footer-link">Random & Utility</a></li>
+                        <li><a href="../../text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="../../developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="../../security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="../../utility-tools.html" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="/about.html" class="footer-link">About Us</a></li>
-                        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
+                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                 </div>
                 <h4 class="footer-section-title">Legal</h4>
                 <ul class="footer-links">
-                    <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
-                    <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
-                    <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Toolzy. All rights reserved. Built with care for productivity.</p>
+            <p>&copy; 2026 Toolzy. All rights reserved. Built with care for productivity.</p>
         </div>
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const textMode = document.getElementById("text-mode");
-            const languageSelect = document.getElementById("language");
-            const rangeInput = document.getElementById("range");
-            const resultBox = document.getElementById("result");
-
-            console.log(textMode.value, languageSelect, rangeInput, resultBox);
-            // =========================
-            // Mode Change Logic
-            // =========================
-            textMode.addEventListener("change", handleModeChange);
-
-            function handleModeChange() {
-                const mode = textMode.value;
-                const options = languageSelect.options;
-
-                for (let i = 0; i < options.length; i++) {
-                    const val = options[i].value;
-
-                    if (mode === "lorem") {
-                        // Enable only US & UK English
-                        if (val === "en-us" || val === "en-uk") {
-                            options[i].disabled = false;
-                        } else {
-                            options[i].disabled = true;
-                        }
-                    } else {
-                        options[i].disabled = false;
-                    }
-                }
-
-                // Auto-switch if current selection becomes invalid
-                if (mode === "lorem" &&
-                    !["en-us", "en-uk"].includes(languageSelect.value)) {
-                    languageSelect.value = "en-us";
-                }
-            }
-
-            // Run once on page load
-            handleModeChange();
-
-            // =========================
-            // Generate Button Logic
-            // =========================
-            window.generateRandomText = function () {
-
-                const mode = textMode.value;
-                const language = languageSelect.value;
-                const wordCount = parseInt(rangeInput.value) || 10;
-
-                if (mode === "lorem") {
-
-                    if (!["en-us", "en-uk"].includes(language)) {
-                        resultBox.textContent = "Lorem Ipsum supports only English.";
-                        return;
-                    }
-
-                    resultBox.textContent = generateLorem(wordCount);
-                    return;
-                }
-
-                if (mode === "plain") {
-                    resultBox.textContent = generateWords(wordCount, language);
-                }
-
-                if (mode === "html") {
-                    resultBox.innerHTML = generateStructuredHTML(wordCount, language);
-                }
-
-            };
-            // ==================
-            // html generator
-            // ==================
-            function generateStructuredHTML(count, lang) {
-
-                const words = generateWords(count, lang).split(" ");
-                let html = "";
-                let i = 0;
-
-                while (i < words.length) {
-
-                    const randomBlock = Math.random();
-
-                    // 20% chance heading
-                    if (randomBlock < 0.2 && i + 5 < words.length) {
-                        const headingWords = words.slice(i, i + 5).join(" ");
-                        html += `&lt;h2&gt;${capitalize(headingWords)}&lt;/h2&gt;`;
-                        i += 5;
-                    }
-
-                    // 20% chance list
-                    else if (randomBlock < 0.4 && i + 6 < words.length) {
-                        html += "&lt;ul&gt;";
-                        for (let j = 0; j < 3; j++) {
-                            const liWords = words.slice(i, i + 4).join(" ");
-                            html += `&lt;li&gt;${liWords}&lt;/li&gt;`;
-                            i += 4;
-                        }
-                        html += "&lt;/ul&gt;";
-                    }
-
-                    // Otherwise paragraph
-                    else {
-                        const paraSize = Math.floor(Math.random() * 20) + 10;
-                        const paraWords = words.slice(i, i + paraSize).join(" ");
-                        html += `&lt;p&gt;${paraWords}&lt;/p&gt;`;
-                        i += paraSize;
-                    }
-                }
-
-                return html;
-            }
-
-            // =========================
-            // Lorem Generator
-            // =========================
-            function generateLorem(count) {
-
-                const loremBase = `
-            lorem ipsum dolor sit amet consectetur adipiscing elit
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quasi impedit, consequatur ipsa in
-                    id dolorem, harum expedita accusantium delectus quia. Veritatis fugiat qui dolores natus odit vel
-                    harum nulla ullam excepturi. Repellat nemo a molestiae debitis quibusdam voluptate voluptatem
-                    obcaecati similique pariatur eligendi, perspiciatis odio, iusto sed sit sunt. Dolorum omnis dolorem
-                    laborum magni doloremque, ipsa minima dicta officiis iusto ut inventore cupiditate provident
-                    molestiae aliquam rem rerum aliquid laboriosam aperiam optio adipisci. Nam, atque accusamus! Illo
-                    eum reiciendis minima cumque vero dolorem, veritatis harum perferendis expedita ad, nesciunt,
-                    accusamus repellendus. Dolorem doloribus maxime cum officiis, incidunt aliquam sed quasi deleniti
-                    corporis explicabo recusandae libero. Architecto sunt expedita, mollitia nemo fugiat perferendis
-                    debitis pariatur soluta ullam enim sit molestias animi porro adipisci! Cupiditate nam iusto iste
-                    nobis labore tenetur ab est perspiciatis itaque consequuntur corporis debitis quam maiores aliquam
-                    ullam maxime aperiam saepe hic ex sequi, eveniet amet quos molestiae nemo? Recusandae atque cum
-                    obcaecati maiores error soluta, debitis maxime laudantium iure ea tempore reprehenderit cupiditate,
-                    a neque perspiciatis labore ad. Commodi nesciunt sunt explicabo voluptatem porro enim aperiam, nulla
-                    iusto quibusdam assumenda aliquam est. Neque libero sint eaquLe, quisquam magnam, voluptate,
-                    doloremque consequatur corporis cumque. Voluptas, deleniti. Doloremque consequatur corporis cumque.
-                    Voluptas, deleniti.
-        `.trim().split(/\s+/);
-
-                let result = [];
-
-                for (let i = 0; i < count; i++) {
-                    result.push(loremBase[i % loremBase.length]);
-                }
-
-                result[0] = capitalize(result[0]);
-
-                return result.join(" ") + ".";
-            }
-
-            // =========================
-            // Random Word Generator
-            // =========================
-            function generateWords(count, lang) {
-
-                const wordPools = {
-                    "en-us": ["technology", "future", "system", "design", "growth", "network", "the", "is", "am", "are", "I", "you", "we", "he", "she", "it",
-                        "a", "an", "this", "that", "these", "those", "and", "but", "or", "so",
-                        "technology", "future", "system", "design", "growth", "network", "data", "internet", "computer", "software",
-                        "information", "development", "science", "research", "innovation", "market", "business", "learning", "education", "knowledge",
-                        "experience", "process", "solution", "method", "strategy", "planning", "team", "project", "goal", "success",
-                        "community", "environment", "world", "health", "money", "time", "energy", "space", "power", "mind",
-                        "life", "work", "idea", "problem", "question", "answer", "culture", "language", "country", "city",
-                        "family", "friend", "child", "people", "person", "place", "home", "school", "company", "office",
-                        "car", "house", "food", "water", "air", "fire", "earth", "sun", "moon", "star",
-                        "day", "night", "morning", "evening", "week", "month", "year", "today", "tomorrow", "yesterday"
-                    ],
-                    "en-uk": ["technology", "future", "system", "design", "growth", "network", "the", "is", "am", "are", "I", "you", "we", "he", "she", "it",
-                        "a", "an", "this", "that", "these", "those", "and", "but", "or", "so",
-                        "technology", "future", "system", "design", "growth", "network", "data", "internet", "computer", "software",
-                        "information", "development", "science", "research", "innovation", "market", "business", "learning", "education", "knowledge",
-                        "experience", "process", "solution", "method", "strategy", "planning", "team", "project", "goal", "success",
-                        "community", "environment", "world", "health", "money", "time", "energy", "space", "power", "mind",
-                        "life", "work", "idea", "problem", "question", "answer", "culture", "language", "country", "city",
-                        "family", "friend", "child", "people", "person", "place", "home", "school", "company", "office",
-                        "flat", "lorry", "holiday", "queue", "biscuit", "petrol", "football", "shop", "lift", "pavement",
-                        "crisps", "trousers", "autumn", "boot", "bonnet", "dustbin", "car park", "chemist", "post", "football pitch"],
-                    "es": ["tecnologia", "futuro", "sistema", "diseno", "crecimiento"],
-                    "fr": ["technologie", "avenir", "systeme", "croissance"],
-                    "de": ["technologie", "zukunft", "system", "entwicklung"],
-                    "hi": ["takneek", "bhavishya", "vikas", "system", "मैं", "तुम", "वह", "वे", "हम", "है", "हूँ", "हैं", "था", "थे",
-                        "यह", "वह", "इन", "उन", "और", "लेकिन", "या", "तो", "क्योंकि", "यदि",
-                        "तकनीक", "भविष्य", "प्रणाली", "डिज़ाइन", "विकास", "नेटवर्क", "डेटा", "इंटरनेट", "कंप्यूटर", "सॉफ़्टवेयर",
-                        "सूचना", "विकास", "विज्ञान", "अनुसंधान", "नवाचार", "बाजार", "व्यवसाय", "अध्ययन", "शिक्षा", "ज्ञान",
-                        "अनुभव", "प्रक्रिया", "समाधान", "तरीका", "रणनीति", "योजना", "टीम", "परियोजना", "लक्ष्य", "सफलता",
-                        "समुदाय", "पर्यावरण", "दुनिया", "स्वास्थ्य", "पैसा", "समय", "ऊर्जा", "अंतरिक्ष", "शक्ति", "मन",
-                        "जीवन", "काम", "विचार", "समस्या", "प्रश्न", "उत्तर", "संस्कृति", "भाषा", "देश", "शहर",
-                        "परिवार", "मित्र", "बच्चा", "लोग", "व्यक्ति", "स्थान", "घर", "स्कूल", "कंपनी", "कार्यालय",
-                        "गाड़ी", "घर", "भोजन", "पानी", "हवा", "आग", "पृथ्वी", "सूर्य", "चाँद", "तारा"],
-                    "ar": ["تقنية", "مستقبل", "نظام"]
-                };
-
-                const pool = wordPools[lang] || wordPools["en-us"];
-
-                let result = [];
-
-                for (let i = 0; i < count; i++) {
-                    result.push(pool[Math.floor(Math.random() * pool.length)]);
-                }
-
-                return result.join(" ");
-            }
-
-            // =========================
-            // Copy Function
-            // =========================
-            window.copyResult = function () {
-
-                const text = resultBox.innerText;
-
-                if (text === '' || text === 'Your generated text will appear here...') {
-                    showNotification('No result to copy', 'error');
-                    return;
-                }
-                copyToClipboard(text, document.getElementById('copy-btn'));
-            };
-
-            // =========================
-            // Utility
-            // =========================
-            function capitalize(word) {
-                return word.charAt(0).toUpperCase() + word.slice(1);
-            }
-
-        });
-
-
-        function clearAll() {
-            document.getElementById('input-text').value = '';
-            document.getElementById('result').textContent = 'Your generated slug will appear here...';
-        }
-    </script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/random-text-generator.js" defer></script>
 </body>
+
 
 </html>
