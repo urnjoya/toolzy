@@ -3,68 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free slug generator tool - generate SEO-friendly URLs instantly.">
+    <meta name="description" content="Toolzy offers generate random color">
+    <meta name="author" content="Toolzy">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Random Color Generate | Toolzy">
+    <meta property="og:description" content="Toolzy offers generate random color">
+    <meta property="og:url" content="https://www.toolzy.xyz/random-color-generator.html">
+    <meta property="og:image" content="https://www.toolzy.xyz/assets/preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Random Color Generate | Toolzy">
+    <meta name="twitter:description" content="Toolzy offers generate random color">
+    <meta name="twitter:image" content="https://www.toolzy.xyz/assets/preview.png">
     <title>Slug Generator - Free Online Tool | Toolzy</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="https://www.toolzy.xyz/slug-generator.html">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
-            <a href="/" class="navbar-logo">Toolzy</a>
+            <a href="../../" class="navbar-logo">Toolzy</a>
             <div class="navbar-search">
                 <div class="search-input">
                     <span class="search-icon">🔍</span>
                     <input type="text" placeholder="Search tools...">
                 </div>
             </div>
-            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="/about.html" class="navbar-link">About</a></li>
-                    <li><a href="/contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="../../about.html" class="navbar-link">About</a></li>
+                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                    <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
+            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
         </div>
     </nav>
-
-    <div class="breadcrumb">
-        <div class="container">
-            <ul class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="/" class="breadcrumb-link">Home</a></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
-                <li class="breadcrumb-item"><a href="/text-tools.html" class="breadcrumb-link">Text Tools</a></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-current">Slug Generator</span></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- <div class="category-quick-nav">
-        <div class="container">
-            <div class="category-buttons">
-                <a href="/text-tools.html" class="category-button active">📝 Text & Writing</a>
-                <a href="/developer-tools.html" class="category-button">💻 Developer Tools</a>
-                <a href="/security-tools.html" class="category-button">🔒 Security & Privacy</a>
-                <a href="/utility-tools.html" class="category-button">🛠️ Random & Utility</a>
-            </div>
-        </div>
-    </div> -->
-
+    <!-- Heading -->
     <div class="page-header page-header-sm">
-        <div class="container">
-            <h1 class="page-title">Slug Generator</h1>
-            <!-- <p class="page-description">Convert text to UPPERCASE, lowercase, Title Case, Sentence case, tOOGLE cASE,
-                PascalCase, ect.</p> -->
-        </div>
+        <h1 class="page-title">Slug Generator</h1>
     </div>
-
+    <!-- Main -->
     <section class="section-sm">
         <div class="container">
             <div class="tool-interface">
                 <div class="form-group">
-                    <!-- <label class="form-label">Enter your text:</label> -->
                     <textarea id="input-text" class="form-textarea" placeholder="Type or paste your text here..."
                         rows="6" style="font-family: inherit;"></textarea>
                 </div>
@@ -113,7 +107,35 @@
             </div>
         </div>
     </section>
-
+    <!-- Category Popup Modal -->
+    <div class="category-modal" id="categoryModal">
+        <div class="category-modal-overlay" id="categoryOverlay"></div>
+        <div class="category-modal-content">
+            <div class="category-modal-header">
+                <h3>Select Category</h3>
+                <button class="category-close" id="categoryClose">&times;</button>
+            </div>
+            <div class="category-modal-body grid grid-cols-2 gap-lg">
+                <a href="../../text-tools.html" class="category-popup-card">
+                    <div class="popup-icon">✍️</div>
+                    <span>Text Tools</span>
+                </a>
+                <a href="../../developer-tools.html" class="category-popup-card">
+                    <div class="popup-icon">💻</div>
+                    <span>Developer Tools</span>
+                </a>
+                <a href="../../security-tools.html" class="category-popup-card">
+                    <div class="popup-icon">🔐</div>
+                    <span>Security</span>
+                </a>
+                <a href="../../utility-tools.html" class="category-popup-card">
+                    <div class="popup-icon">🎲</div>
+                    <span>Utility</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -126,109 +148,38 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="/text-tools.html" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="/developer-tools.html" class="footer-link">Developer Tools</a></li>
-                        <li><a href="/security-tools.html" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="/utility-tools.html" class="footer-link">Random & Utility</a></li>
+                        <li><a href="../../text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="../../developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="../../security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="../../utility-tools.html" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="/about.html" class="footer-link">About Us</a></li>
-                        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
+                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
-                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Toolzy. All rights reserved. Built with care for productivity.</p>
+                <p>&copy; 2026 Toolzy. All rights reserved. Built with care for productivity.</p>
             </div>
         </div>
     </footer>
 
-    <script src="/js/main.js"></script>
-    <script>
-        const resultBox = document.getElementById("result");
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/slug-generator.js" defer></script>
 
-        function generateSlug(type) {
-            const textarea = document.getElementById("input-text"); // assuming same textarea
-            let text = textarea.value;
-
-            if (!text.trim()) {
-                resultBox.textContent = "Your generated slug will appear here...";
-                return;
-            }
-
-            const removeStopWords = document.getElementById("remove-stop-words").checked;
-            const removeNumbers = document.getElementById("remove-numbers").checked;
-
-            const separator = type === "with-underscores" ? "_" : "-";
-
-            /* ---------------- STEP 1: Normalize Accents ---------------- */
-            text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
-            /* ---------------- STEP 2: Lowercase ---------------- */
-            text = text.toLowerCase();
-
-            /* ---------------- STEP 3: Remove Numbers (Optional) ---------------- */
-            if (removeNumbers) {
-                text = text.replace(/\d+/g, "");
-            }
-
-            /* ---------------- STEP 4: Remove Stop Words (Optional) ---------------- */
-            if (removeStopWords) {
-                const stopWords = new Set([
-                    "a", "an", "the", "and", "or", "but", "if", "in", "on", "at", "to",
-                    "for", "with", "of", "by", "is", "are", "was", "were", "be", "been",
-                    "this", "that", "these", "those", "it", "as", "from", "so", "than"
-                ]);
-
-                text = text
-                    .split(/\s+/)
-                    .filter(word => !stopWords.has(word))
-                    .join(" ");
-            }
-
-            /* ---------------- STEP 5: Remove Special Characters ---------------- */
-            text = text.replace(/[^a-z0-9\s]/g, " ");
-
-            /* ---------------- STEP 6: Replace Spaces With Separator ---------------- */
-            text = text.trim().replace(/\s+/g, separator);
-
-            /* ---------------- STEP 7: Remove Duplicate Separators ---------------- */
-            const sepRegex = new RegExp(`${separator}+`, "g");
-            text = text.replace(sepRegex, separator);
-
-            /* ---------------- STEP 8: Trim Separator From Edges ---------------- */
-            const edgeRegex = new RegExp(`^${separator}|${separator}$`, "g");
-            text = text.replace(edgeRegex, "");
-
-            resultBox.textContent = text || "—";
-        }
-
-
-        function copyResult() {
-            const text = document.getElementById('input-text').value;
-            if (text === '') {
-                showNotification('No result to copy', 'error');
-                return;
-            }
-            copyToClipboard(text, document.getElementById('copy-btn'));
-        }
-
-        function clearAll() {
-            document.getElementById('input-text').value = '';
-            document.getElementById('result').textContent = 'Your generated slug will appear here...';
-        }
-    </script>
 </body>
+
 
 </html>
