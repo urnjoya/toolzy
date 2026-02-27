@@ -1,12 +1,12 @@
 [
     {
         "uid": "",
-        "id": "#",
+        "id": "0",
         "rank-id": "1",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Case Converter",
+        "slug": "tools/text-tools/case-converter.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -14,16 +14,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "1",
         "rank-id": "2",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Find & Replace",
+        "slug": "tools/text-tools/find-replace.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -31,16 +31,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "2",
         "rank-id": "3",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Line Break Remover",
+        "slug": "tools/text-tools/line-break-remover.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -48,16 +48,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "3",
         "rank-id": "4",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Random Text Generator",
+        "slug": "tools/text-tools/random-text-generator.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -65,16 +65,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "4",
         "rank-id": "5",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Slug Generator",
+        "slug": "tools/text-tools/slug-generator.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -82,16 +82,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "5",
         "rank-id": "6",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Text Calculator",
+        "slug": "tools/text-tools/text-calculator.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -99,16 +99,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "6",
         "rank-id": "7",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Text Cleaner",
+        "slug": "tools/text-tools/text-cleaner.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -116,16 +116,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "7",
         "rank-id": "8",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Text Reverser",
+        "slug": "tools/text-tools/text-reverser.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -133,16 +133,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "8",
         "rank-id": "9",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Text Shuffle",
+        "slug": "tools/text-tools/text-shuffle.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -150,16 +150,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "9",
         "rank-id": "10",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Text Sorter",
+        "slug": "tools/text-tools/text-sorter.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -167,16 +167,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "10",
         "rank-id": "11",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Whitespace Remover",
+        "slug": "tools/text-tools/whitespace-remover.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -184,16 +184,16 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "11",
         "rank-id": "12",
         "type": "tool",
-        "title": "The Developer Tool Title",
-        "slug": "/dev-tool/###",
-        "category": "dev-tool",
+        "title": "Word Counter",
+        "slug": "tools/text-tools/word-counter.html",
+        "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
@@ -201,15 +201,86 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": false
+        "active": true
+    },
+        {
+        "uid": "",
+        "id": "12",
+        "rank-id": "13",
+        "type": "tool",
+        "title": "Number Conversion",
+        "slug": "tools/developer-tools/number-conversion.html",
+        "category": "dev-tool",
+        "icon": "0️⃣1️⃣",
+        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "features": [
+            "null"
+        ],
+        "difficulty": "null",
+        "popular": null,
+        "active": true
     },
     {
         "uid": "",
-        "id": "#",
+        "id": "13",
+        "rank-id": "14",
+        "type": "tool",
+        "title": "Rich Text <--> Markdown",
+        "slug": "tools/developer-tools/rich-text-markdown.html",
+        "category": "dev-tool",
+        "icon": "🆎",
+        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "features": [
+            "null"
+        ],
+        "difficulty": "null",
+        "popular": null,
+        "active": true
+    },
+        {
+        "uid": "",
+        "id": "14",
+        "rank-id": "15",
+        "type": "tool",
+        "title": "Password Generator",
+        "slug": "tools/security-tools/password-strength-generator.html",
+        "category": "security-tool",
+        "icon": "🔏",
+        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "features": [
+            "null"
+        ],
+        "difficulty": "null",
+        "popular": null,
+        "active": true
+    },
+    {
+        "uid": "",
+        "id": "15",
+        "rank-id": "16",
+        "type": "tool",
+        "title": "Random Color Generator",
+        "slug": "tools/utility-tools/random-color-generator.html",
+        "category": "utility-tool",
+        "icon": "🔤",
+        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "features": [
+            "null"
+        ],
+        "difficulty": "null",
+        "popular": null,
+        "active": true
+    },
+
+    {
+        "uid": "",
+        "id": "ad-1",
         "rank-id": "13",
         "type": "ad",
         "difficulty": "null",
         "popular": null,
         "active": false
     }
+
 ]
+
