@@ -1121,7 +1121,7 @@ code {
 
 
 .page-description {
-    display: none;
+    display: block;
     max-width: 700px;
     margin: 0 auto;
     color: var(--color-text-secondary);
@@ -1565,3 +1565,4 @@ code {
         transform: translateY(0);
     }
 }
+
