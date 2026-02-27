@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 card.innerHTML = `
                 <div>
-                  <a href="tools/utility-tools/${item.slug}" class="tool-card card">
+                  <a href="../../tools/utility-tools/${item.slug}" class="tool-card card">
                     <div class="tool-card-icon">${item.icon}</div>
                     <div class="tool-card-body">
                       <h3 class="card-title">${item.title}</h3>
@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+
