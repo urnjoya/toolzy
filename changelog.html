@@ -79,21 +79,11 @@
                 <ul class="navbar-links">
                     <li><a href="about.html" class="navbar-link">About</a></li>
                     <li><a href="contact.html" class="navbar-link">Contact</a></li>
+                                        <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- BREADCRUMB -->
-    <div class="breadcrumb">
-        <div class="container">
-            <ul class="breadcrumb-list">
-                <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Home</a></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
-                <li class="breadcrumb-item"><span class="breadcrumb-current">Changelog</span></li>
-            </ul>
-        </div>
-    </div>
     <section class="section">
   <div class="container">
     <h1 class="page-title">Changelog</h1>
@@ -101,23 +91,11 @@
       Track new features, improvements, and bug fixes released on Toolzy.
     </p>
 
-    <div class="card" style="margin-top: var(--space-xl);">
-      <div class="card-body">
-        <h2>Version 1.2.0 – March 2026</h2>
-        <ul>
-          <li>✨ Added 3 new text processing tools</li>
-          <li>🚀 Improved search performance</li>
-          <li>🔒 Enhanced privacy controls</li>
-          <li>🐛 Fixed mobile navigation issue</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="card" style="margin-top: var(--space-lg);">
       <div class="card-body">
-        <h2>Version 1.1.0 – February 2026</h2>
+        <h2>Version 1.0.0 – February 2026</h2>
         <ul>
-          <li>💻 Launched Developer Tools category</li>
+          <li>💻 Launched Toolzy Website with web pages</li>
           <li>⚡ Performance optimization</li>
         </ul>
       </div>
@@ -125,6 +103,34 @@
 
   </div>
 </section>
+        <!-- Category Popup Modal -->
+    <div class="category-modal" id="categoryModal">
+        <div class="category-modal-overlay" id="categoryOverlay"></div>
+        <div class="category-modal-content">
+            <div class="category-modal-header">
+                <h3>Select Category</h3>
+                <button class="category-close" id="categoryClose">&times;</button>
+            </div>
+            <div class="category-modal-body grid grid-cols-2 gap-lg">
+                <a href="tools/text-tools/" class="category-popup-card">
+                    <div class="popup-icon">✍️</div>
+                    <span>Text Tools</span>
+                </a>
+                <a href="tools/developer-tools" class="category-popup-card">
+                    <div class="popup-icon">💻</div>
+                    <span>Developer Tools</span>
+                </a>
+                <a href="tools/security-tools/" class="category-popup-card">
+                    <div class="popup-icon">🔐</div>
+                    <span>Security</span>
+                </a>
+                <a href="tools/utility-tools" class="category-popup-card">
+                    <div class="popup-icon">🎲</div>
+                    <span>Utility</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -139,10 +145,10 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="text-tools.html" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="developer-tools.html" class="footer-link">Developer Tools</a></li>
-                        <li><a href="security-tools.html" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="utility-tools.html" class="footer-link">Random & Utility</a></li>
+                        <li><a href="tools/text-tools/" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="tools/developer-tools/" class="footer-link">Developer Tools</a></li>
+                        <li><a href="tools/security-tools/" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="tools/utility-tools/" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
 
@@ -174,3 +180,4 @@
     <script src="js/main.js" defer></script>
 </body>
 </html>
+
