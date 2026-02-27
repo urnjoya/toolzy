@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.getElementById("tool-list");
 
-    fetch("../../data/json/developer-tool-list.json")
+    fetch("../../data/json/developer-tools.json")
         .then(res => res.json())
         .then(data => {
 
@@ -70,4 +70,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+
 
