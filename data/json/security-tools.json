@@ -1,13 +1,13 @@
 [
     {
         "uid": "",
-        "id": "#",
+        "id": "1",
         "rank-id": "1",
         "type": "tool",
-        "title": "The Security Tool Title",
-        "slug": "/security-tool/###",
+        "title": "Password Generator",
+        "slug": "password-strength-generator.html",
         "category": "security-tool",
-        "icon": "🔤",
+        "icon": "🔏",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
         "features": [
             "null"
@@ -31,7 +31,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -48,7 +48,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -65,7 +65,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -82,7 +82,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -99,7 +99,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -116,7 +116,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -133,7 +133,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -150,7 +150,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -167,7 +167,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -184,7 +184,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -201,7 +201,7 @@
         ],
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     },
     {
         "uid": "",
@@ -210,6 +210,7 @@
         "type": "ad",
         "difficulty": "null",
         "popular": null,
-        "active": true
+        "active": false
     }
+
 ]
