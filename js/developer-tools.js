@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const container = document.getElementById("tool-list");
 
-    fetch("data/json/developer-tool-list.json")
+    fetch("../../data/json/developer-tool-list.json")
         .then(res => res.json())
         .then(data => {
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 card.innerHTML = `
                 <div>
-                  <a href="tools/developer-tools/${item.slug}" class="tool-card card">
+                  <a href="../../tools/developer-tools/${item.slug}" class="tool-card card">
                     <div class="tool-card-icon">${item.icon}</div>
                     <div class="tool-card-body">
                       <h3 class="card-title">${item.title}</h3>
@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+
