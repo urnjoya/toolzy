@@ -192,7 +192,7 @@
         "rank-id": "12",
         "type": "tool",
         "title": "Word Counter",
-        "slug": "word=counter.html",
+        "slug": "word-counter.html",
         "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
@@ -214,3 +214,4 @@
     }
 
 ]
+
