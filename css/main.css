@@ -1566,3 +1566,37 @@ code {
     }
 }
 
+/* Search Index Style */
+.search-container {
+    position: relative;
+    width: 300px;
+}
+
+#searchInput {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+.search-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-item:hover {
+    background: #f2f2f2;
+}
