@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Home",
+        "url": "index.html"
+    },
+    {
+        "title": "About us",
+        "url": "about.html"
+    },
+    {
+        "title": "Contact Page",
+        "url": "contact.html"
+    },
+    {
+        "title": "Case Converter",
+        "url": "tools/text-tools/case-converter.html"
+    },
+    {
+        "title": "Word Counter",
+        "url": "tools/text-tools/word-counter.html"
+    }
+]
