@@ -6,7 +6,7 @@ const BASE_PATH = window.location.origin + window.location.pathname.split('/').s
         }
         let pages = [];
 
-        fetch('/data/json/search-index.json')
+        fetch('data/json/search-index.json')
             .then(res => res.json())
             .then(data => pages = data);
 
