@@ -82,7 +82,8 @@
             <div class="navbar-search">
                 <div class="search-input">
                     <span class="search-icon">🔍</span>
-                    <input type="text" placeholder="Search tools...">
+                    <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off">
+                    <div id="searchResults" class="search-results"></div>
                 </div>
             </div>
             <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
@@ -274,7 +275,9 @@
 
     <script src="js/main.js" defer></script>
     <script src="js/contact.js" defer></script>
+    <script src="js/search-index.js" defer></script>
 </body>
 
 
 </html>
+
