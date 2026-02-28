@@ -48,12 +48,13 @@
   <nav class="navbar">
     <div class="container navbar-container">
       <a href="index.html" class="navbar-logo">Toolzy</a>
-      <div class="navbar-search">
-        <div class="search-input">
-          <span class="search-icon">🔍</span>
-          <input type="text" placeholder="Search tools...">
-        </div>
-      </div>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
       <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
       <div class="navbar-menu">
         <ul class="navbar-links">
@@ -266,8 +267,10 @@
   </footer>
 
   <script src="js/main.js" defer ></script>
+  <script src="js/search-index.js" defer></script>
 </body>
 
 
 </html>
+
 
