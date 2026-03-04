@@ -12,9 +12,9 @@ function clearAll() {
     document.getElementById('input-text').value = '';
     document.getElementById('result').textContent = 'Your result will appear here...';
 }
-function copyResultEditor() {
-    const resultEl = document.getElementById("result");
-    if (resultEl == 'Your result will appear here...') {
+function copyResultEditorAdj() {
+    const resultEl = document.getElementById("input-text").textContent;
+    if (resultEl == '') {
         showNotification('No result to copy', "error");
         return;
     }
@@ -24,3 +24,4 @@ function clearAllEditor() {
     document.getElementById("input-text").innerHTML = "";
     document.getElementById("result").innerHTML = "Your result will appear here...";
 }
+
