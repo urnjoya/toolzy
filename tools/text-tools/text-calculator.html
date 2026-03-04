@@ -5,41 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Toolzy offers generate random color">
-    <meta name="author" content="Toolzy">
-    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="Free online text calculator to estimate reading time, speaking time, and average word length instantly. Fast, accurate, and privacy-focused browser-based tool.">
+
+    <meta name="keywords"
+        content="text calculator, reading time calculator, speaking time estimator, average word length calculator, text analysis tool, word statistics tool">
+
+    <meta name="author" content="abcroot">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Random Color Generate | Toolzy">
-    <meta property="og:description" content="Toolzy offers generate random color">
-    <meta property="og:url" content="https://www.toolzy.xyz/random-color-generator.html">
-    <meta property="og:image" content="https://www.toolzy.xyz/assets/preview.png">
+    <meta property="og:site_name" content="abcroot">
+    <meta property="og:title" content="Free Text Calculator – Reading & Speaking Time Tool">
+    <meta property="og:description"
+        content="Estimate reading time, speaking time, and word statistics instantly with this free online text calculator.">
+    <meta property="og:url" content="https://www.abcroot.xyz/tools/text-tools/text-calculator/">
+    <meta property="og:image" content="https://www.abcroot.xyz/assets/text-calculator-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Random Color Generate | Toolzy">
-    <meta name="twitter:description" content="Toolzy offers generate random color">
-    <meta name="twitter:image" content="https://www.toolzy.xyz/assets/preview.png">
-    <title>Text Calculator - Free Online Tool | Toolzy</title>
-    <link rel="canonical" href="https://www.toolzy.xyz/random-color-generate.html">
+    <meta name="twitter:title" content="Text Calculator – Reading & Speaking Time">
+    <meta name="twitter:description"
+        content="Instantly calculate reading time, speaking time, and average word length online. Free and secure.">
+    <meta name="twitter:image" content="https://www.abcroot.xyz/assets/text-calculator-preview.png">
+    <title>Text Calculator – Reading Time, Speaking Time & Word Stats | abcroot</title>
+    <link rel="canonical" href="https://www.abcroot.xyz/random-color-generate.html">
+    <link rel="canonical" href="https://www.abcroot.xyz/tools/text-tools/text-calculator.html">
+
     <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
     <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+    <link rel="preload" href="../../css/main.css" as="style">
     <link rel="stylesheet" href="../../css/main.css">
-</head>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Text Calculator",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Web",
+  "description": "Free online text calculator to estimate reading time, speaking time, and analyze word statistics instantly.",
+  "url": "https://www.abcroot.xyz/tools/text-tools/text-calculator/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "abcroot",
+    "url": "https://www.abcroot.xyz"
+  }
+}
+</script>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container navbar-container">
-            <a href="../../" class="navbar-logo">Toolzy</a>
-            <div class="navbar-search">
-                <div class="search-input">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" placeholder="Search tools...">
-                </div>
-            </div>
+            <a href="../../" class="navbar-logo">abcroot</a>
+                        <div class="navbar-search">
+                                <div class="search-input">
+                                        <span class="search-icon">🔍</span>
+                                        <input type="text" id="searchInput" placeholder="Search tools..."
+                        autocomplete="off">
+                                        <div id="searchResults" class="search-results"></div>
+                                    </div>
+                            </div>
             <div class="navbar-menu">
                 <ul class="navbar-links">
                     <li><a href="../../about.html" class="navbar-link">About</a></li>
@@ -64,9 +101,9 @@
                 </div>
 
                 <div class="grid grid-cols-auto" style="gap: var(--space-sm);">
-                    <button onclick="convertCase('reading-time')" class="btn btn-primary">Reading Time</button>
-                    <button onclick="convertCase('speaking-time')" class="btn btn-primary">Speaking Time</button>
-                    <button onclick="convertCase('average-word-length')" class="btn btn-primary">Average Word
+                    <button onclick="convertCase('reading-time')" class="btn btn-theme-a">Reading Time</button>
+                    <button onclick="convertCase('speaking-time')" class="btn btn-theme-a">Speaking Time</button>
+                    <button onclick="convertCase('average-word-length')" class="btn btn-theme-a">Average Word
                         Length</button>
                 </div>
 
@@ -75,16 +112,11 @@
                         <span class="result-label">Result:</span>
                         <button onclick="copyResult()" class="copy-btn" id="copy-btn">📋 Copy</button>
                     </div>
-                    <div class="result-content" id="result">Your calculator result will appear here...</div>
+                    <div class="result-content" id="result">Your result will appear here...</div>
                 </div>
 
                 <button onclick="clearAll()" class="btn btn-secondary mt-lg" style="width: 100%;">Clear All</button>
             </div>
-
-            <div class="ad-block ad-block-horizontal">
-                <p>Advertisement Space</p>
-            </div>
-
             <div class="card">
                 <h2 class="card-title">How to Use</h2>
                 <div class="card-body">
@@ -106,20 +138,42 @@
                 <button class="category-close" id="categoryClose">&times;</button>
             </div>
             <div class="category-modal-body grid grid-cols-2 gap-lg">
-                <a href="../../text-tools.html" class="category-popup-card">
-                    <div class="popup-icon">✍️</div>
+                <a href="../../tools/text-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="8" y1="13" x2="16" y2="13" />
+                            <line x1="8" y1="17" x2="16" y2="17" />
+                        </svg></div>
                     <span>Text Tools</span>
                 </a>
-                <a href="../../developer-tools.html" class="category-popup-card">
-                    <div class="popup-icon">💻</div>
+                <a href="../../tools/developer-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg></div>
                     <span>Developer Tools</span>
                 </a>
-                <a href="../../security-tools.html" class="category-popup-card">
-                    <div class="popup-icon">🔐</div>
+                <a href="../../tools/security-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg></div>
                     <span>Security</span>
                 </a>
-                <a href="../../utility-tools.html" class="category-popup-card">
-                    <div class="popup-icon">🎲</div>
+                <a href="../../tools/utility-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
+                            <path d="M16 4l4 4" />
+                        </svg></div>
                     <span>Utility</span>
                 </a>
             </div>
@@ -130,7 +184,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h3 class="footer-section-title">Toolzy</h3>
+                    <h3 class="footer-section-title">abcroot</h3>
                     <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: var(--space-md);">
                         Professional online tools for everyone. Fast, free, and privacy-focused.
                     </p>
@@ -149,6 +203,8 @@
                     <ul class="footer-links">
                         <li><a href="../../about.html" class="footer-link">About Us</a></li>
                         <li><a href="../../contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="../../changelog.html" class="footer-link">changelog</a></li>
                     </ul>
                 </div>
                 <div>
@@ -161,13 +217,21 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Toolzy. All rights reserved. Built with care for productivity.</p>
+                <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
             </div>
         </div>
     </footer>
 
     <script src="../../js/main.js" defer></script>
     <script src="../../js/text-calculator.js" defer></script>
+    <!-- FOR FOOTER YEAR UPDATE -->
+    <script src="../../js/main-j.js" defer></script>
+    <!-- FOR MODEL OPEN -->
+    <script src="../../js/main-m.js" defer></script>
+    <!-- FOR SEARCH BY INDEX -->
+    <script src="../../js/search-index.js" defer></script>
+    <!-- COPY AND CLEAR -->
+    <script src="../../js/main-c.js" defer></script>
 </body>
 
 
