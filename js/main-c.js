@@ -12,6 +12,9 @@ function clearAll() {
     document.getElementById('input-text').value = '';
     document.getElementById('result').textContent = 'Your result will appear here...';
 }
+function clearAllAmc(){
+    document.getElementById('result').textContent = 'Your result will appear here...';
+}
 function copyResultEditorAdj() {
     const resultEl = document.getElementById("input-text").textContent;
     if (resultEl == '') {
@@ -24,4 +27,5 @@ function clearAllEditor() {
     document.getElementById("input-text").innerHTML = "";
     document.getElementById("result").innerHTML = "Your result will appear here...";
 }
+
 
