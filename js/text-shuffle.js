@@ -59,19 +59,3 @@
 
             document.getElementById('result').textContent = result;
         }
-
-
-
-        function copyResult() {
-            const text = document.getElementById('result').textContent;
-            if (text === 'Your case converted text will appear here...') {
-                showNotification('No result to copy', 'error');
-                return;
-            }
-            copyToClipboard(text, document.getElementById('copy-btn'));
-        }
-
-        function clearAll() {
-            document.getElementById('input-text').value = '';
-            document.getElementById('result').textContent = 'Your case converted text will appear here...';
-        }
