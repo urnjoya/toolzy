@@ -39,7 +39,7 @@
         "rank-id": "3",
         "type": "tool",
         "title": "Line Break Remover",
-        "slug": "line-break-remover.html",
+        "slug": "text-line-tools.html",
         "category": "text-tool",
         "icon": "🔤",
         "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
@@ -214,4 +214,5 @@
     }
 
 ]
+
 
