@@ -63,6 +63,7 @@ const textarea = document.getElementById("input-text");
             }
 
             textarea.value = text;
+                            document.getElementById('result').textContent = text;
         }
 
         // 
