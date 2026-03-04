@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Free online Text & Markdown Converter to quickly convert between plain text and Markdown. Fast, browser-based, secure, and no signup required.">
+    <meta name="keywords"
+        content="text to markdown, markdown to text, markdown converter, online text converter, developer tools, free online tools">
+    <meta name="author" content="abcroot">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="abcroot">
+    <meta property="og:title" content="Text & Markdown Converter – Free Online Tool | abcroot">
+    <meta property="og:description"
+        content="Convert plain text to Markdown or Markdown to plain text instantly. Fast, free, and privacy-first.">
+    <meta property="og:url" content="https://www.abcroot.xyz/tools/developer-tools/text-markdown-converter.html">
+    <meta property="og:image" content="https://www.abcroot.xyz/assets/text-markdown-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Text & Markdown Converter | abcroot">
+    <meta name="twitter:description"
+        content="Instantly convert between plain text and Markdown online. Free, fast, and secure developer tool.">
+    <meta name="twitter:image" content="https://www.abcroot.xyz/assets/text-markdown-preview.png">
+    <title>Text & Markdown Converter – Free Online Tool | abcroot</title>
+    <link rel="canonical" href="https://www.abcroot.xyz/tools/developer-tools/text-markdown-converter.html">
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preload" href="../../css/main.css" as="style">
+    <link rel="preload" href="../../css/number-conversion.css" as="style">
+    <link rel="preload" href="../../css/rich-text-markdown.css" as="style">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/number-conversion.css">
+    <link rel="stylesheet" href="../../css/rich-text-markdown.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Text & Markdown Converter",
+  "applicationCategory": "DeveloperTool",
+  "operatingSystem": "Web",
+  "description": "Convert plain text to Markdown or Markdown to plain text instantly using this free online developer tool. Fast, secure, and browser-based.",
+  "url": "https://www.abcroot.xyz/tools/developer-tools/text-markdown-converter.html",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "abcroot",
+    "url": "https://www.abcroot.xyz"
+  }
+}
+</script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../../" class="navbar-logo">abcroot</a>
+                        <div class="navbar-search">
+                                <div class="search-input">
+                                        <span class="search-icon">🔍</span>
+                                        <input type="text" id="searchInput" placeholder="Search tools..."
+                        autocomplete="off">
+                                        <div id="searchResults" class="search-results"></div>
+                                    </div>
+                            </div>
+            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
+            <div class="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="../../about.html" class="navbar-link">About</a></li>
+                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                    <li class="navbar-link" id="categoryBtn">Category</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header page-header-sm">
+        <h1 class="page-title">Rich Text Markdown</h1>
+    </div>
+
+    <section class="section-sm">
+        <div class="container">
+            <div class="tool-interface tool-main">
+                <div class="s1">
+                    <div class="tool-interface ncop">
+                        <div class="sele" id="fr">
+                            <label for="base-from">From</label>
+                            <select name="base-from" id="base-from">
+                                <option selected value=" ">--Select--</option>
+                                <option value="rich">Rich Text</option>
+                                <option value="markdown">Markdown</option>
+                            </select>
+                        </div>
+                        <div class="sele" id="to">
+                            <label for="base-to">to</label>
+                            <select name="base-to" id="base-to">
+                                <option selected value=" ">--Select--</option>
+                                <option value="rich">Rich Text</option>
+                                <option value="markdown">Markdown</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div id="input-text" contenteditable="true" class="form-textarea editor"></div>
+                    </div>
+
+                    <div class="grid grid-cols-auto" style="gap: var(--space-sm);">
+                        <button onclick="perform()" class="btn btn-theme-a">Convert</button>
+                    </div>
+                </div>
+                <div class="s2">
+                    <div class="result-card">
+                        <div class="result-header">
+                            <span class="result-label">Result:</span>
+                            <button onclick="copyResultEditor()" class="copy-btn" id="copy-btn">📋 Copy</button>
+                        </div>
+                        <div class="result-content" id="result">Your result will appear here...</div>
+                    </div>
+
+                    <button onclick="clearAllEditor()" class="btn btn-secondary mt-lg" style="width: 100%;">Clear
+                        All</button>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="card-title">How to Use</h2>
+                <div class="card-body">
+                    <ol style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
+                        <li>Enter your text in the input field.</li>
+                        <li>Click to convert your text button.</li>
+                        <li>Copy the result using the copy button.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Category Popup Modal -->
+    <div class="category-modal" id="categoryModal">
+        <div class="category-modal-overlay" id="categoryOverlay"></div>
+        <div class="category-modal-content">
+            <div class="category-modal-header">
+                <h3>Select Category</h3>
+                <button class="category-close" id="categoryClose">&times;</button>
+            </div>
+            <div class="category-modal-body grid grid-cols-2 gap-lg">
+                <a href="../../tools/text-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="8" y1="13" x2="16" y2="13" />
+                            <line x1="8" y1="17" x2="16" y2="17" />
+                        </svg></div>
+                    <span>Text Tools</span>
+                </a>
+                <a href="../../tools/developer-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg></div>
+                    <span>Developer Tools</span>
+                </a>
+                <a href="../../tools/security-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg></div>
+                    <span>Security</span>
+                </a>
+                <a href="../../tools/utility-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
+                            <path d="M16 4l4 4" />
+                        </svg></div>
+                    <span>Utility</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-section-title">abcroot</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: var(--space-md);">
+                        Professional online tools for everyone. Fast, free, and privacy-focused.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="../../developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="../../security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="../../utility-tools.html" class="footer-link">Random & Utility</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
+                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="../../changelog.html" class="footer-link">Changelog</a></li>
+                        <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/rich-text-markdown.js" defer></script>
+    <!-- FOR FOOTER YEAR UPDATE -->
+    <script src="../../js/main-j.js" defer></script>
+    <!-- FOR MODEL OPEN -->
+    <script src="../../js/main-m.js" defer></script>
+    <!-- FOR SEARCH BY INDEX -->
+    <script src="../../js/search-index.js" defer></script>
+    <!-- COPY AND CLEAR -->
+    <script src="../../js/main-c.js" defer></script>
+</body>
+
+</html>
