@@ -8,7 +8,7 @@
         "slug": "number-conversion.html",
         "category": "dev-tool",
         "icon": "0️⃣1️⃣",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Convert numbers between different formats instantly (binary, decimal, octal, and hexadecimal).",
         "features": [
             "null"
         ],
@@ -21,11 +21,11 @@
         "id": "1",
         "rank-id": "2",
         "type": "tool",
-        "title": "Rich Text <--> Markdown",
+        "title": "Rich Text  & Markdown Converter",
         "slug": "text-markdown-converter.html",
         "category": "dev-tool",
         "icon": "🆎",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Convert plain text to Markdown and Markdown to formatted text instantly.",
         "features": [
             "null"
         ],
@@ -214,5 +214,6 @@
     }
 
 ]
+
 
 
