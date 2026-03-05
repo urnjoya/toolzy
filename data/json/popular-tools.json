@@ -8,7 +8,7 @@
         "slug": "text-tools/case-converter.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Instantly convert text between uppercase, lowercase, sentence case, title case, and other formats with this quick and easy case converter tool.",
         "features": [
             "null"
         ],
@@ -24,8 +24,8 @@
         "title": "Find & Replace",
         "slug": "text-tools/find-replace.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🔍",
+        "short_description": "Quickly find specific words or phrases in your text and replace them with new content. Perfect for editing large text blocks efficiently.",
         "features": [
             "null"
         ],
@@ -42,7 +42,7 @@
         "slug": "text-tools/text-line-tools.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Remove unwanted line breaks from copied text and merge lines into a clean paragraph for easier reading, editing, and formatting.",
         "features": [
             "null"
         ],
@@ -59,7 +59,7 @@
         "slug": "text-tools/random-text-generator.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Generate random text, words, or paragraphs instantly for testing layouts, placeholders, or design mockups.",
         "features": [
             "null"
         ],
@@ -75,8 +75,8 @@
         "title": "Slug Generator",
         "slug": "text-tools/slug-generator.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "📱",
+        "short_description": "Create clean and SEO-friendly URL slugs from titles or text by automatically removing spaces, special characters, and formatting.",
         "features": [
             "null"
         ],
@@ -92,8 +92,8 @@
         "title": "Text Calculator",
         "slug": "text-tools/text-calculator.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🧮",
+        "short_description": "Perform quick calculations directly inside text, including sums, averages, and numeric operations without switching tools.",
         "features": [
             "null"
         ],
@@ -109,8 +109,8 @@
         "title": "Text Cleaner",
         "slug": "text-tools/text-cleaner.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🧹",
+        "short_description": "Clean and format messy text by removing unwanted spaces, special characters, and formatting issues in seconds.",
         "features": [
             "null"
         ],
@@ -126,8 +126,8 @@
         "title": "Text Reverser",
         "slug": "text-tools/text-reverser.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "◀️",
+        "short_description": "Reverse characters, words, or entire sentences instantly for fun experiments, encoding tricks, or quick text manipulation.",
         "features": [
             "null"
         ],
@@ -143,8 +143,8 @@
         "title": "Text Shuffle",
         "slug": "text-tools/text-shuffle.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🔀",
+        "short_description": "Randomly shuffle letters, words, or lines of text to generate unique variations or scrambled content instantly.",
         "features": [
             "null"
         ],
@@ -160,8 +160,8 @@
         "title": "Text Sorter",
         "slug": "text-tools/text-sorter.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🔠",
+        "short_description": "Sort text lines alphabetically, numerically, or in reverse order to quickly organize lists and structured content.",
         "features": [
             "null"
         ],
@@ -177,8 +177,8 @@
         "title": "Whitespace Remover",
         "slug": "text-tools/whitespace-remover.html",
         "category": "text-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🗒️",
+        "short_description": "Remove extra spaces, tabs, and unnecessary whitespace from text to make it cleaner and easier to process.",
         "features": [
             "null"
         ],
@@ -195,7 +195,7 @@
         "slug": "text-tools/word-counter.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Count words, characters, sentences, and paragraphs instantly to analyze text length and structure.",
         "features": [
             "null"
         ],
@@ -212,7 +212,7 @@
         "slug": "developer-tools/number-conversion.html",
         "category": "dev-tool",
         "icon": "0️⃣1️⃣",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Convert numbers between binary, decimal, octal, and hexadecimal formats quickly for programming and technical tasks.",
         "features": [
             "null"
         ],
@@ -225,11 +225,11 @@
         "id": "13",
         "rank-id": "14",
         "type": "tool",
-        "title": "Rich Text <--> Markdown",
+        "title": "Rich Text & Markdown Converter",
         "slug": "developer-tools/text-markdown-converter.html",
         "category": "dev-tool",
         "icon": "🆎",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Convert plain text to Markdown and Markdown to formatted text instantly.",
         "features": [
             "null"
         ],
@@ -246,7 +246,7 @@
         "slug": "security-tools/password-generator.html",
         "category": "security-tool",
         "icon": "🔏",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Generate strong and secure passwords instantly with customizable length, symbols, numbers, and letters.",
         "features": [
             "null"
         ],
@@ -262,8 +262,8 @@
         "title": "Random Color Generator",
         "slug": "utility-tools/random-color-generator.html",
         "category": "utility-tool",
-        "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "icon": "🎨",
+        "short_description": "Generate random colors instantly and copy HEX or RGB values for design projects, UI themes, and creative inspiration.",
         "features": [
             "null"
         ],
@@ -283,6 +283,7 @@
     }
 
 ]
+
 
 
 
