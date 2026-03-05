@@ -8,7 +8,7 @@
         "slug": "case-converter.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Convert text between uppercase, lowercase, sentence case, title case, and other formats instantly with this simple and fast case converter tool.",
         "features": [
             "null"
         ],
@@ -25,7 +25,7 @@
         "slug": "find-replace.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Quickly find specific words or phrases in your text and replace them with new content. Ideal for editing large blocks of text efficiently.",
         "features": [
             "null"
         ],
@@ -42,7 +42,7 @@
         "slug": "text-line-tools.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Remove unwanted line breaks from copied or formatted text and merge lines into clean paragraphs for easier editing and formatting.",
         "features": [
             "null"
         ],
@@ -59,7 +59,7 @@
         "slug": "random-text-generator.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Generate random words, sentences, or paragraphs instantly for placeholder text, design mockups, testing layouts, or development purposes.",
         "features": [
             "null"
         ],
@@ -76,7 +76,7 @@
         "slug": "slug-generator.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Create clean and SEO-friendly URL slugs from titles or text by removing spaces, special characters, and unnecessary formatting.",
         "features": [
             "null"
         ],
@@ -93,7 +93,7 @@
         "slug": "text-calculator.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Perform quick numeric calculations directly within text including sums, totals, and averages without switching to a separate calculator.",
         "features": [
             "null"
         ],
@@ -110,7 +110,7 @@
         "slug": "text-cleaner.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Clean messy text instantly by removing extra spaces, unwanted characters, and formatting issues to produce neat and readable content.",
         "features": [
             "null"
         ],
@@ -127,7 +127,7 @@
         "slug": "text-reverser.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Reverse characters, words, or entire sentences instantly for fun experiments, encoding tricks, or quick text manipulation.",
         "features": [
             "null"
         ],
@@ -144,7 +144,7 @@
         "slug": "text-shuffle.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Randomly shuffle letters, words, or lines of text to create unique variations, scrambled content, or randomized lists.",
         "features": [
             "null"
         ],
@@ -161,7 +161,7 @@
         "slug": "text-sorter.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Sort text lines alphabetically, numerically, or in reverse order to quickly organize lists, datasets, or structured text.",
         "features": [
             "null"
         ],
@@ -178,7 +178,7 @@
         "slug": "whitespace-remover.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Remove extra spaces, tabs, and unnecessary whitespace from text to make it cleaner, more readable, and easier to process.",
         "features": [
             "null"
         ],
@@ -195,7 +195,7 @@
         "slug": "word-counter.html",
         "category": "text-tool",
         "icon": "🔤",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Count words, characters, sentences, and paragraphs instantly to analyze text length, readability, and writing structure.",
         "features": [
             "null"
         ],
@@ -212,9 +212,4 @@
         "popular": null,
         "active": false
     }
-
 ]
-
-
-
-
