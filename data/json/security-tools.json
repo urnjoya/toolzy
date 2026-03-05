@@ -8,7 +8,7 @@
         "slug": "password-generator.html",
         "category": "security-tool",
         "icon": "🔏",
-        "short_description": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.",
+        "short_description": "Generate strong and secure passwords instantly with customizable length, symbols, numbers, and letters.",
         "features": [
             "null"
         ],
@@ -214,5 +214,6 @@
     }
 
 ]
+
 
 
