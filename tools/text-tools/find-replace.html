@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
+    <base href="../../">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Free online Find and Replace tool to quickly search text and replace words, phrases, or patterns instantly. Fast, secure, browser-based text editor with no data stored.">
 
     <meta name="keywords"
         content="find and replace tool, search and replace text, replace words online, text replacer, bulk text replace, regex replace tool, online text editor, free text tools">
-
     <meta name="author" content="abcroot">
     <meta name="robots" content="index, follow, max-image-preview:large">
 
@@ -31,21 +31,19 @@
     <meta name="twitter:description"
         content="Quickly search and replace words, phrases, or patterns in text. 100% free and secure.">
     <meta name="twitter:image" content="https://abcroot.xyz/assets/find-replace-preview.png">
-
-    <title>Find & Replace Tool – Search and Replace Text Online | abcroot</title>
-
+    <title>Find and Replace Text Online (Free Tool) – Search & Replace Words | abcroot</title>
     <link rel="canonical" href="https://abcroot.xyz/tools/text-tools/find-replace.html">
 
-    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
-    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <script src="../../js/analytics.js"></script>
-    <link rel="preload" href="../../css/main.css" as="style">
-    <link rel="preload" href="../../css/find-replace.css" as="style">
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/find-replace.css">
-        
+    <script src="js/analytics.js"></script>
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="css/find-replace.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/find-replace.css">
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,88 +65,114 @@
   }
 }
 </script>
+    <script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+ {
+ "@type":"Question",
+ "name":"What is the Find and Replace tool?",
+ "acceptedAnswer":{
+ "@type":"Answer",
+ "text":"The Find and Replace tool allows users to search and replace words or phrases instantly in a block of text."
+ }
+ }
+ ]
+}
+</script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container navbar-container">
-            <a href="../../" class="navbar-logo">Toolzy</a>
-                        <div class="navbar-search">
-                                <div class="search-input">
-                                        <span class="search-icon">🔍</span>
-                                        <input type="text" id="searchInput" placeholder="Search tools..."
-                        autocomplete="off">
-                                        <div id="searchResults" class="search-results"></div>
-                                    </div>
-                            </div>
+            <a href="" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="search" id="searchInput" placeholder="Search tools..." autocomplete="off"
+                        aria-label="Search tools">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="../../about.html" class="navbar-link">About</a></li>
-                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="about.html" class="navbar-link">About</a></li>
+                    <li><a href="contact.html" class="navbar-link">Contact</a></li>
                     <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
-            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
+            <button class="mobile-menu-toggle" aria-label="humburger"><span class="mobile-menu-icon"></span></button>
         </div>
     </nav>
     <!-- Header -->
-    <div class="page-header page-header-sm">
-        <h1 class="page-title">Find & Replace</h1>
-    </div>
+    <header class="page-header page-header-sm">
+        <h1 class="page-title" aria-label="Page title">Find & Replace</h1>
+    </header>
     <!-- Main -->
-    <section class="section-sm">
-        <div class="container">
+    <main class="section-sm">
+        <section class="container">
             <div class="tool-interface">
                 <div class="tool-interface tool-interface-left">
-                    <div class="form-group">
+                    <section class="form-group">
                         <div id="input-text" contenteditable="true" class="editor form-textarea"
-                            placeholder="Type or paste your text here..."></div>
-
-                    </div>
-                    <div class="result-card">
+                            data-placeholder="Type or paste text here..." role="textbox" aria-multiline="true"
+                            aria-label="Text editor for find and replace"></div>
+                    </section>
+                    <section class="result-card">
                         <div>
                             <div class="o-line">
                                 <!-- Result Count -->
-                                <div class="result-count">0 of 0</div>
+                                <div class="result-count" aria-live="polite" aria-label="Number of matches found">0 of 0
+                                </div>
                             </div>
                             <div class="a-line">
                                 <div class="a1-line">
                                     <!-- Find -->
                                     <div class="find-input fin-a">
-                                        <input type="text" id="find-text" class="form-input" placeholder="Find">
+                                        <input type="text" id="find-text" class="form-input" placeholder="Find"
+                                            aria-label="Enter text to find" title="ALT + SHIFT + F">
                                     </div>
                                     <!-- Previous match -->
-                                    <div class="previous-match fin-b">&#8593;</div>
+                                    <div class="previous-match fin-b" role="button" tabindex="0"
+                                        aria-label="Go to previous match" title="ALT + &uarr;">&#8593;</div>
                                 </div>
                                 <div class="a2-line">
                                     <div class="replace-input fin-a">
                                         <input type="text" id="replace-text" class="form-input"
-                                            placeholder="Replacement">
+                                            placeholder="Replacement" aria-label="Enter replacement text"
+                                            title="ALT + SHIFT + R">
                                     </div>
                                     <!-- Next Match -->
-                                    <div class="next-match fin-b">&#8595;</div>
+                                    <div class="next-match fin-b" role="button" tabindex="0"
+                                        aria-label="Go to next match" title="ALT + &darr;">&#8595;</div>
                                 </div>
                             </div>
                             <div class="b-line">
                                 <!-- Replace One By One -->
-                                <button class="btn btn-secondary replace-one-btn">Replace</button>
+                                <button class="btn btn-secondary replace-one-btn"
+                                    aria-label="Replace the currently selected match" title="ENTER">Replace</button>
                                 <!-- Replace All -->
-                                <button class="btn btn-secondary replace-all-btn">Replace All</button>
+                                <button class="btn btn-secondary replace-all-btn"
+                                    aria-label="Replace all matching words or phrases"
+                                    title="CTRL + ALT + ENTER">Replace All</button>
                             </div>
                             <div class="c-line">
                                 <div class="c1-line">
                                     <!-- Match case -->
                                     <div class="match-case">
-                                        <label>
-                                            <input type="checkbox" id="match-case-checkbox">
+                                        <label title="ALT + C">
+                                            <input type="checkbox" id="match-case-checkbox"
+                                                aria-label="Enable case-sensitive search">
                                             Match Case
                                         </label>
                                     </div>
                                     <!-- Match Whole Word -->
                                     <div class="match-whole-word">
-                                        <label>
-                                            <input type="checkbox" id="match-whole-word-checkbox">
+                                        <label title="ALT + W">
+                                            <input type="checkbox" id="match-whole-word-checkbox"
+                                                aria-label="Match whole words only">
                                             Match Whole Word
                                         </label>
                                     </div>
@@ -156,32 +180,163 @@
                                     <!-- Find in Selection -->
                                     <div class="find-in-selection">
                                         <label>
-                                            <input type="checkbox" id="find-in-selection-checkbox">
+                                            <input type="checkbox" id="find-in-selection-checkbox"
+                                                aria-label="Search only within selected text">
                                             In Selection
                                         </label>
                                     </div>
                                 </div>
                                 <div class="c2-line">
-                                    <button onclick="copyResultEditorAdj()" class="copy-btn" id="copy-btn">📋 Copy</button>
+                                    <button onclick="copyResultEditorAdj()" class="copy-btn" id="copy-btn"
+                                        aria-label="Copy the edited text to clipboard">
+                                        <svg class="code-option__button-svg" width="13" height="17"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                            <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd">
+                                                <path d="M5 5h7v11H5z"></path>
+                                                <path d="M1 15V1h10"></path>
+                                            </g>
+                                        </svg>
+                                        Copy
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <!--  -->
                 </div>
-
-                <div class="card">
-                    <h2 class="card-title">How to Use</h2>
+                <section class="card">
+                    <h2 class="card-title">How to Use Find & Replace</h2>
                     <div class="card-body">
-                        <ol
+                        <ol class="tool-steps"
                             style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
-                            <li>Enter your text in the input field.</li>
+                            <li>Enter or paste your text into the input box</li>
                             <li>Click any of the buttons in the Find & Replace section.</li>
-                            <li>Copy the result using the copy button.</li>
+                            <li>Click the <strong>Copy</strong> button to copy the result.</li>
                         </ol>
+                        <h3>Keyboard Shortcuts</h3>
+                        <p>You can also perform using this following keyboard shortcuts:</p>
+                        <ul class="shortcut-list">
+                            <li><strong>ALT + SHIFT + F</strong> --> Find</li>
+                            <li><strong>ALT + SHIFT + R</strong> --> Replace focus</li>
+                            <li><strong>ALT + &uarr;</strong> --> Previous</li>
+                            <li><strong>ALT + &darr;</strong> --> Next</li>
+                            <li><strong>ENTER</strong> --> Replace trigger</li>
+                            <li><strong>CTRL + ALT + ENTER </strong> --> Replace All</li>
+                            <li><strong>ALT + C</strong> --> Match Case</li>
+                            <li><strong>ALT + W</strong> --> Match Whole Word</li>
+                        </ul>
                     </div>
-                </div>
+                </section>
+                <section class="card">
+                    <h2 class="card-title">What is Find and Replace?</h2>
+
+                    <p>
+                        The Find and Replace tool allows you to quickly search for specific words, phrases, or text
+                        patterns and replace them with new content. It is commonly used for editing documents, cleaning
+                        data, updating text, and making bulk changes in large text blocks.
+                    </p>
+
+                    <h3>Common Uses</h3>
+
+                    <ul>
+                        <li>Fix repeated spelling mistakes</li>
+                        <li>Update outdated terms or names</li>
+                        <li>Replace words across large documents</li>
+                        <li>Clean and edit large text content</li>
+                        <li>Bulk modify data for coding or documentation</li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h3 class="card-title">Related Text Tools</h3>
+                    <div class="card-body">
+                        <ul class="related-tools">
+                            <li>
+                                <a href="tools/text-tools/case-converter.html" hreflang="en" target="_blank"
+                                    aria-label="Open Case ConverterTool" title="Case Converter Tool">Case Converter</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/slug-generator.html" hreflang="en" target="_blank"
+                                    aria-label="Open Slug Generator Tool" title="Free Slug Generator Tool">Slug
+                                    Generator</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/random-text-generator.html" hreflang="en" target="_blank"
+                                    aria-label="Open Random Text Generator Tool"
+                                    title="Plain text, HTML, Lorem Ipsum">Random Text Generator</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/text-calculator.html" hreflang="en" target="_blank"
+                                    aria-label="Open Text Calculator Tool"
+                                    title="Reading & Speaking Time, Average Word Length">Text Calculator</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/text-cleaner.html" hreflang="en" target="_blank"
+                                    aria-label="Open Text Cleaner Tool"
+                                    title="Remove Duplicate words, Punctuation, Special characters, Numbers, HTML tags, Emojis, Stop words & Fix spacing issues ">Text
+                                    Cleaner</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/text-line-tools.html" hreflang="en" target="_blank"
+                                    aria-label="Open Text Line Tool" title="">Line Break Remover</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/text-reverser.html" hreflang="en" target="_blank"
+                                    aria-label="Open Text Reverser Tool" title="Free Text Reverse Tool">Text
+                                    Reverser</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/text-shuffle.html" hreflang="en" target="_blank"
+                                    aria-label="Open Text shuffle Tool" title="Free Text Shuffle Tool">Text shuffle</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/text-sorter.html" hreflang="en" target="_blank"
+                                    aria-label="Open Text Sorter Tool" title="Free Text Sorter Tool">Text Sorter</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/whitespace-remover.html" hreflang="en" target="_blank"
+                                    aria-label="Open Whitespace Remover Tool" title="Free Whitespace Remover">Whitespace
+                                    Remover</a>
+                            </li>
+                            <li>
+                                <a href="tools/text-tools/word-counter.html" hreflang="en" target="_blank"
+                                    aria-label="Open Word Counter Tool" title="Word Counter Tool">Word Counter</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <h3>What is the Find and Replace tool?</h3>
+                    <p>
+                        The Find and Replace tool allows you to search for specific words or phrases within a text and
+                        replace them instantly with new text.
+                    </p>
+
+                    <h3>Is this Find and Replace tool free?</h3>
+                    <p>
+                        Yes. This tool is completely free and runs directly in your browser without storing your data.
+                    </p>
+
+                    <h3>Can I replace multiple words at once?</h3>
+                    <p>
+                        Yes. Using the Replace All option you can replace every matching word or phrase instantly.
+                    </p>
+
+                    <h3>Does this tool store my text?</h3>
+                    <p>
+                        No. All processing happens in your browser, so your text remains private.
+                    </p>
+
+                    <h3>Can I match case or whole words?</h3>
+                    <p>
+                        Yes. You can enable Match Case and Match Whole Word options for more accurate replacements.
+                    </p>
+
+                </section>
             </div>
-    </section>
+        </section>
+    </main>
     <!-- Category Popup Modal -->
     <div class="category-modal" id="categoryModal">
         <div class="category-modal-overlay" id="categoryOverlay"></div>
@@ -191,10 +346,10 @@
                 <button class="category-close" id="categoryClose">&times;</button>
             </div>
             <div class="category-modal-body grid grid-cols-2 gap-lg">
-                <a href="../../tools/text-tools/" class="category-popup-card">
+                <a href="tools/text-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
                             <polyline points="14 2 14 8 20 8" />
                             <line x1="8" y1="13" x2="16" y2="13" />
@@ -202,28 +357,28 @@
                         </svg></div>
                     <span>Text Tools</span>
                 </a>
-                <a href="../../tools/developer-tools/" class="category-popup-card">
+                <a href="tools/developer-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <polyline points="16 18 22 12 16 6" />
                             <polyline points="8 6 2 12 8 18" />
                         </svg></div>
                     <span>Developer Tools</span>
                 </a>
-                <a href="../../tools/security-tools/" class="category-popup-card">
+                <a href="tools/security-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
                             <path d="M9 12l2 2 4-4" />
                         </svg></div>
                     <span>Security</span>
                 </a>
-                <a href="../../tools/utility-tools/" class="category-popup-card">
+                <a href="tools/utility-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
                             <path d="M16 4l4 4" />
                         </svg></div>
@@ -234,10 +389,10 @@
     </div>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="footer-grid">
                 <div>
-                    <h3 class="footer-section-title">Toolzy</h3>
+                    <h3 class="footer-section-title">abcroot</h3>
                     <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: var(--space-md);">
                         Professional online tools for everyone. Fast, free, and privacy-focused.
                     </p>
@@ -245,53 +400,47 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="../../text-tools.html" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="../../developer-tools.html" class="footer-link">Developer Tools</a></li>
-                        <li><a href="../../security-tools.html" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="../../utility-tools.html" class="footer-link">Random & Utility</a></li>
+                        <li><a href="text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="utility-tools.html" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
-                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
-                        <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
-                        <li><a href="../../changelog.html" class="footer-link">changelog</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="changelog.html" class="footer-link">changelog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
-                        <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
             </div>
-        </div>
+        </section>
     </footer>
 
-    <script src="../../js/main.js" defer></script>
-    <script src="../../js/find-replace.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/find-replace.js" defer></script>
     <!-- FOR FOOTER YEAR UPDATE -->
-    <script src="../../js/main-j.js" defer></script>
+    <script src="js/main-j.js" defer></script>
     <!-- FOR MODEL OPEN -->
-    <script src="../../js/main-m.js" defer></script>
+    <script src="js/main-m.js" defer></script>
     <!-- FOR SEARCH BY INDEX -->
-    <script src="../../js/search-index.js" defer></script>
+    <script src="js/search-index.js" defer></script>
     <!-- COPY AND CLEAR -->
-    <script src="../../js/main-c.js" defer></script>
+    <script src="js/main-c.js" defer></script>
 </body>
 
 
 </html>
-
-
-
-
-
-
