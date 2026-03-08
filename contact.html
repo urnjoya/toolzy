@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -22,14 +22,12 @@
     <meta property="og:image" content="https://abcroot.xyz/assets/contact-preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact abcroot – Free Online Tools Support">
     <meta name="twitter:description"
         content="Have questions or suggestions? Contact abcroot for support or feedback about our free online tools.">
     <meta name="twitter:image" content="https://abcroot.xyz/assets/contact-preview.png">
-
     <title>Contact abcroot – Free Online Tools Support | abcroot</title>
     <link rel="canonical" href="https://abcroot.xyz/contact.html">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -58,18 +56,17 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">abcroot</a>
-                        <div class="navbar-search">
-                                <div class="search-input">
-                                        <span class="search-icon">🔍</span>
-                                        <input type="text" id="searchInput" placeholder="Search tools..."
-                        autocomplete="off">
-                                        <div id="searchResults" class="search-results"></div>
-                                    </div>
-                            </div>
-            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
+            <a href="index.html" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span class="mobile-menu-icon"></span></button>
             <div class="navbar-menu">
                 <ul class="navbar-links">
                     <li><a href="about.html" class="navbar-link">About</a></li>
@@ -79,15 +76,15 @@
             </div>
         </div>
     </nav>
-    <div class="page-header">
+    <header class="page-header">
         <div class="container">
             <h1 class="page-title">Contact Us</h1>
             <p class="page-description">Have questions, feedback, or suggestions? We'd love to hear from you.</p>
         </div>
-    </div>
+    </header>
 
     <section class="section">
-        <div class="container">
+        <section class="container">
             <div class="grid grid-cols-2">
                 <!-- <div> -->
                 <!-- <div class="card" style="display:hidden;"> -->
@@ -121,11 +118,10 @@
                                 <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                             </form> -->
             </div>
-        </div>
-        </div>
+        </section>
 
-        <div>
-            <div class="card">
+        <section>
+            <section class="card">
                 <h2 class="card-title">Get in Touch</h2>
                 <div class="card-body">
                     <p>We're here to help! Whether you have questions about our tools, found a bug, or want to
@@ -169,9 +165,9 @@
                             line.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="card">
+            <section class="card">
                 <h2 class="card-title">FAQ</h2>
                 <div class="card-body">
                     <p>Before reaching out, you might find answers to common questions in our documentation or
@@ -181,10 +177,8 @@
                         <a href="index.html#category" class="btn btn-secondary">Browse All Tools</a>
                     </p>
                 </div>
-            </div>
-        </div>
-        </div>
-        </div>
+            </section>
+        </section>
     </section>
     <!-- Category Popup Modal -->
     <div class="category-modal" id="categoryModal">
@@ -237,7 +231,7 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="footer-grid">
                 <div>
                     <h3 class="footer-section-title">abcroot</h3>
@@ -275,7 +269,7 @@
             <div class="footer-bottom">
                 <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
             </div>
-        </div>
+        </section>
     </footer>
 
     <script src="js/main.js" defer></script>
@@ -287,8 +281,4 @@
     <!-- FOR SEARCH BY INDEX -->
     <script src="js/search-index.js" defer></script>
 </body>
-
-
 </html>
-
-
