@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -241,13 +240,12 @@
   </style>
   <base href="https://abcroot.xyz/">
 </head>
-
 <body>
   <main class="m-container">
     <div class="m-error-card">
 
       <!-- Branding -->
-      <div class="m-logo">abc<span>root</span></div>
+      <div class="m-logo" aria-label="abcroot logo">abc<span>root</span></div>
 
       <!-- Visuals -->
       <div class="m-illustration">👻</div>
@@ -260,16 +258,15 @@
       </p>
 
       <!-- Search -->
-      <div class="m-search-container">
+      <section class="m-search-container">
         <div class="navbar-search">
           <div class="search-input">
             <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off">
+            <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off" aria-label="Search tools">
             <div id="searchResults" class="search-results"></div>
           </div>
         </div>
-
-      </div>
+      </section>
 
       <!-- Actions -->
       <div class="m-actions">
@@ -447,13 +444,9 @@
       </div>
     </div>
   </footer>
-
   <script src="/js/main.js" defer></script>
   <script src="/js/home.js" defer></script>
   <script src="/js/main-j.js" defer></script>
   <script src="/js/search-index.js" defer></script>
 </body>
-
-
 </html>
-
