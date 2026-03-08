@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
+    <base href="../../">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,13 +28,13 @@
     <!--  -->
     <title>Text & Writing Tools – Word Counter, Case Converter & More | abcroot</title>
     <link rel="canonical" href="https://abcroot.xyz/tools/text-tools/">
-    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
-    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <script src="../../js/analytics.js"></script>
-    <link rel="preload" href="../../css/main.css" as="style">
-    <link rel="stylesheet" href="../../css/main.css">
+    <script src="js/analytics.js"></script>
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,39 +49,36 @@
 
 <body>
     <!-- NAVIGATION -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container navbar-container">
-            <a href="../../" class="navbar-logo" title="abcroot">abcroot</a>
-                        <div class="navbar-search">
-                                <div class="search-input">
-                                        <span class="search-icon">🔍</span>
-                                        <input type="text" id="searchInput" placeholder="Search tools..."
-                        autocomplete="off">
-                                        <div id="searchResults" class="search-results"></div>
-                                    </div>
-                            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span class="mobile-menu-icon"></span>
+            <a href="" class="navbar-logo" title="abcroot" aria-label="abcroot homepage">abcroot</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off"
+                        aria-label="Search tools">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"> <span class="mobile-menu-icon"></span>
             </button>
-
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="../../about.html" class="navbar-link">About</a></li>
-                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="about.html" class="navbar-link">About</a></li>
+                    <li><a href="contact.html" class="navbar-link">Contact</a></li>
                     <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- PAGE HEADER -->
-    <div class="page-header">
-        <div class="container">
-            <h1 class="page-title">Text & Writing Tools</h1>
-            <p class="page-description">Professional text processing utilities for writers, editors, and content
-                creators.
-                Count words, convert cases, generate text, and more.</p>
-        </div>
-    </div>
+    <header class="page-header">
+        <section class="container">
+            <h1 class="page-title" aria-label="Page title">Text & Writing Tools</h1>
+            <p class="page-description" aria-label="Page description">Professional text processing utilities for
+                writers, editors, and content creators.Count words, convert cases, generate text, and more.</p>
+        </section>
+    </header>
 
     <!-- TOOLS GRID -->
     <section class="section">
@@ -97,40 +95,94 @@
         <div class="container">
             <h2 class="text-center mb-lg">Explore Other Categories</h2>
             <div class="grid grid-cols-3">
-                <a href="../../tools/developer-tools/" class="card category-card">
-                    <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                <a href="tools/developer-tools/" class="card category-card">
+                    <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
                             <polyline points="16 18 22 12 16 6" />
                             <polyline points="8 6 2 12 8 18" />
                         </svg></div>
                     <h3 class="category-card-title">Developer Tools</h3>
-                    <p class="card-description">Encoding, debugging, and development utilities.</p>
+                    <p class="card-description">Developer utilities such as encoding, decoding, formatting, and
+                        debugging tools.</p>
                 </a>
 
-                <a href="../../tools/security-tools/" class="card category-card">
-                    <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                <a href="tools/security-tools/" class="card category-card">
+                    <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
                             <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
                             <path d="M9 12l2 2 4-4" />
                         </svg></div>
                     <h3 class="category-card-title">Security & Privacy</h3>
-                    <p class="card-description">Secure hashing and privacy-focused tools.</p>
+                    <p class="card-description">Security utilities including hashing tools and privacy-focused
+                        utilities.</p>
                 </a>
 
-                <a href="../../tools/utility-tools/" class="card category-card">
-                    <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                <a href="tools/utility-tools/" class="card category-card">
+                    <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
                             <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
                             <path d="M16 4l4 4" />
                         </svg></div>
                     <h3 class="category-card-title">Random & Utility</h3>
-                    <p class="card-description">Practical tools for everyday productivity</p>
+                    <p class="card-description">Security utilities including hashing tools and privacy-focused
+                        utilities.</p>
                 </a>
             </div>
         </div>
+    </section>
+    <section class="card">
+        <h2 class="card-title">About Text & Writing Tools</h2>
+        <p class="card-body">
+            Text and writing tools help users analyze, format, and improve text quickly.
+            These utilities are commonly used by writers, students, editors, bloggers,
+            and developers to perform tasks such as counting words, converting text
+            cases, removing extra spaces, and generating formatted text.
+            All tools on abcroot work directly in your browser and require no downloads.
+            Text and writing tools are designed to help users analyze, format, and improve text quickly and efficiently.
+            These utilities are commonly used by writers, bloggers, editors, students, and developers who need to
+            process text for different purposes.
+            Common tasks include counting words and characters, converting text cases, removing extra spaces, analyzing
+            sentences, and formatting content. Instead of performing these tasks manually, online tools automate the
+            process and deliver instant results.
+            The text tools on abcroot are built to run entirely inside your browser. This means your data remains
+            private and secure because it never leaves your device. These tools are optimized for speed, simplicity, and
+            ease of use so you can focus on your writing or development work without distractions.
+        </p>
+    </section>
+    <section class="card">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What are text tools?</h3>
+        <p>
+            Text tools are online utilities that help users analyze, format, and modify text. They can perform tasks
+            such as counting words, converting letter cases, removing whitespace, and analyzing sentences.
+        </p>
+        <h3>Who uses text processing tools?</h3>
+        <p>
+            Text tools are commonly used by writers, bloggers, editors, students, developers, and content creators who
+            need to work with text efficiently.
+        </p>
+        <h3>What is a word counter?</h3>
+        <p>
+            A word counter is a tool that calculates the total number of words in a piece of text. Many word counters
+            also provide additional statistics such as characters, sentences, and paragraphs.
+        </p>
+        <h3>Are online text tools safe to use?</h3>
+        <p>
+            Yes. Most modern text tools process data directly inside the browser, which means your text is not uploaded
+            or stored on any server.
+        </p>
+        <h3>Do i need to install software to use text tools?</h3>
+        <p>
+            No. Online text tools work directly in your web browser and require no downloads or installation.
+        </p>
+        <h3>Are text tools free on abcroot?</h3>
+        <p>
+            Yes. All text tools on abcroot are completely free to use with no registration or subscription required.
+        </p>
     </section>
     <!-- Category Popup Modal -->
     <div class="category-modal" id="categoryModal">
@@ -141,10 +193,10 @@
                 <button class="category-close" id="categoryClose">&times;</button>
             </div>
             <div class="category-modal-body grid grid-cols-2 gap-lg">
-                <a href="../../tools/text-tools/" class="category-popup-card">
+                <a href="tools/text-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
                             <polyline points="14 2 14 8 20 8" />
                             <line x1="8" y1="13" x2="16" y2="13" />
@@ -152,28 +204,28 @@
                         </svg></div>
                     <span>Text Tools</span>
                 </a>
-                <a href="../../tools/developer-tools/" class="category-popup-card">
+                <a href="tools/developer-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <polyline points="16 18 22 12 16 6" />
                             <polyline points="8 6 2 12 8 18" />
                         </svg></div>
                     <span>Developer Tools</span>
                 </a>
-                <a href="../../tools/security-tools/" class="category-popup-card">
+                <a href="tools/security-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
                             <path d="M9 12l2 2 4-4" />
                         </svg></div>
                     <span>Security</span>
                 </a>
-                <a href="../../tools/utility-tools/" class="category-popup-card">
+                <a href="tools/utility-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
                             <path d="M16 4l4 4" />
                         </svg></div>
@@ -184,7 +236,7 @@
     </div>
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="footer-grid">
                 <div>
                     <h3 class="footer-section-title">abcroot</h3>
@@ -192,51 +244,46 @@
                         Professional online tools for everyone. Fast, free, and privacy-focused.
                     </p>
                 </div>
-
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="../../tools/text-tools/" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="../../tools/developer-tools/" class="footer-link">Developer Tools</a></li>
-                        <li><a href="../../tools/security-tools/" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="../../tools/utility-tools/" class="footer-link">Random & Utility</a></li>
+                        <li><a href="text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="utility-tools.html" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
-
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
-                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
-                        <li><a href="../../changelog.html" class="footer-link">Changelog</a></li>
-                        <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="changelog.html" class="footer-link">changelog</a></li>
                     </ul>
                 </div>
-
                 <div>
                     <h4 class="footer-section-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
-                        <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
-                </p>
             </div>
-        </div>
+        </section>
     </footer>
-    <script src="../../js/main.js" defer></script>
-    <script src="../../js/text-tools.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/text-tools.js" defer></script>
     <!-- FOR FOOTER YEAR UPDATE -->
-    <script src="../../js/main-j.js" defer></script>
+    <script src="js/main-j.js" defer></script>
     <!-- FOR MODEL OPEN -->
-    <script src="../../js/main-m.js" defer></script>
+    <script src="js/main-m.js" defer></script>
     <!-- FOR SEARCH BY INDEX -->
-    <script src="../../js/search-index.js" defer></script>
+    <script src="js/search-index.js" defer></script>
 </body>
 
 </html>
