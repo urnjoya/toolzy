@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
+    <base href="../../">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
         content="Free online random text generator to create dummy text, placeholder paragraphs, sentences, and words instantly. Fast, secure, and browser-based – no data stored.">
 
     <meta name="keywords"
-        content="random text generator, dummy text generator, placeholder text, lorem ipsum generator, random paragraph generator, random sentence generator, free text tools">
+        content="random text generator, dummy text generator, placeholder text, lorem ipsum generator, random paragraph generator, random sentence generator, free text tools, multilingual text generator ">
 
     <meta name="author" content="abcroot">
     <meta name="robots" content="index, follow">
@@ -36,13 +37,13 @@
 
     <link rel="canonical" href="https://abcroot.xyz/tools/text-tools/random-text-generator.html">
 
-    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
-    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <script src="../../js/analytics.js"></script>
-    <link rel="preload" href="../../css/main.css" as="style">
-    <link rel="stylesheet" href="../../css/main.css">
+    <script src="js/analytics.js"></script>
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="stylesheet" href="css/main.css">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -64,49 +65,180 @@
   }
 }
 </script>
+    <style>
+        main .container {
+            max-width: 100%;
+        }
+
+        .both-btn {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Two boxes (rows) per column */
+            grid-auto-flow: row;
+            gap: 4px;
+        }
+
+        .clear-btn,
+        .copy-btn {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-radius: 0 0 0 5px;
+
+        }
+
+        .clear-btn {
+            background-color: #0e3972;
+            color: #fff;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .copy-btn {
+            background-color: #0e3972;
+            color: #fff;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 0 0 10px 10px;
+            padding: 12px 24px;
+        }
+
+        .btn-secondary:hover {
+            background-color: #0e3972;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: #ffffff
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .result-content {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .result-content {
+            height: 40vh;
+            max-height: 40vh;
+        }
+
+        @media (max-width: 767px) {
+            .r-t-g {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-auto-flow: column;
+                gap: 10px;
+                margin-bottom: 17px;
+                font-weight: 500;
+                font-size: 13px;
+            }
+
+            .page-title {
+                padding-bottom: 0;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 10px 60px;
+                /* margin: 0 40%; */
+            }
+
+            .both-btn {
+                grid-template-columns: 1fr 2fr;
+                /* Makes the second column twice as wide as the first */
+                /* Or a 70/30 split: grid-template-columns: 3fr 7fr; */
+            }
+
+            .container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            .r-t-g {
+                display: grid;
+                /* Define 3 columns */
+                grid-template-columns: repeat(3, 1fr);
+                /* Define exactly 2 rows to force Box 2 below Box 1 */
+                grid-template-rows: repeat(2, 1fr);
+                /* Fill columns first, then move to the next column */
+                grid-auto-flow: column;
+                gap: 20px;
+                margin-bottom: 17px;
+                padding: 7px 2px;
+                font-weight: 800;
+            }
+
+            .r-t-g label,
+            .r-t-g select {
+                margin-right: 15px;
+            }
+
+            .btn {
+                width: max-content;
+                padding: 10px 60px;
+                /* margin: 0 40%; */
+            }
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container navbar-container">
-            <a href="../../" class="navbar-logo">abcroot</a>
-                        <div class="navbar-search">
-                                <div class="search-input">
-                                        <span class="search-icon">🔍</span>
-                                        <input type="text" id="searchInput" placeholder="Search tools..."
-                        autocomplete="off">
-                                        <div id="searchResults" class="search-results"></div>
-                                    </div>
-                            </div>
-            <button class="mobile-menu-toggle"><span class="mobile-menu-icon"></span></button>
+            <a href="" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off"
+                        aria-label="Search tools">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="../../about.html" class="navbar-link">About</a></li>
-                    <li><a href="../../contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="about.html" class="navbar-link">About</a></li>
+                    <li><a href="contact.html" class="navbar-link">Contact</a></li>
                     <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
+            <button class="mobile-menu-toggle" aria-label="humburger"><span class="mobile-menu-icon"></span></button>
         </div>
     </nav>
     <!-- Heading -->
-    <div class="page-header page-header-sm">
-        <h1 class="page-title">Random Text Generator</h1>
-    </div>
+    <header class="page-header page-header-sm">
+        <h1 class="page-title" aria-label="Page title">Text Generator</h1>
+    </header>
     <!-- Main -->
-    <section class="section-sm">
-        <div class="container">
-            <div class="tool-interface">
-                <div class="form-group">
-
-                </div>
-
-                <div class="grid grid-cols-auto" style="gap: var(--space-sm);">
+    <main class="section-sm">
+        <section class="container">
+            <section class="tool-interface" style="margin-bottom: 10%;">
+                <div class="grid grid-cols-auto r-t-g" style="gap: var(--space-sm);">
+                    <label for="text-mode">Text Mode</label>
                     <select name="text-mode" id="text-mode">
                         <option value="plain">Plain Text</option>
                         <option value="html">HTML</option>
                         <option value="lorem">Lorem Ipsum</option>
                     </select>
+                    <label for="language">Language</label>
                     <select name="language" id="language">
                         <option value="en-us">English</option>
                         <option value="en-uk">UK English</option>
@@ -125,33 +257,171 @@
                         <option value="kn">Kannada</option>
                         <option value="ml">Malayalam</option>
                     </select>
-                    <input type="number" id="range" placeholder="Number of words" min="1" max="1000">
-                    <button class="btn btn-theme-a" style="width: 100%;" onclick="generateRandomText()">Generate
-                        Text</button>
+                    <label for="range">Number of words</label>
+                    <input type="number" id="range" placeholder="Number of words" min="1" max="1000"
+                        aria-label="Enter how many words want to generate">
                 </div>
-
-                <div class="result-card">
-                    <div class="result-header">
-                        <span class="result-label">Result:</span>
-                        <button onclick="copyResult()" class="copy-btn" id="copy-btn">📋 Copy</button>
+                <button class="btn btn-primary" style="border-radius: 10px; " onclick="generateRandomText()"
+                    aria-label="Generate the result">Generate Text</button>
+                <section class="result-card">
+                    <div class="result-content" id="result" style="white-space: pre-wrap;" role="status">Your result
+                        will appear here...</div>
+                    <div class="both-btn">
+                        <button onclick="copyResult()" class="copy-btn" id="copy-btn">
+                            <svg class="code-option__button-svg" width="13" height="17"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd">
+                                    <path d="M5 5h7v11H5z"></path>
+                                    <path d="M1 15V1h10"></path>
+                                </g>
+                            </svg>
+                            Copy
+                        </button>
+                        <button onclick="clearAllAmc()" class="btn btn-secondary clear-btn" style="width: 100%;"
+                            aria-label="Clear all text result">
+                            <svg class="code-option__button-svg" width="17" height="17" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <!-- Trash Bin Body -->
+                                    <path d="M3 6h18"></path>
+                                    <path
+                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                    </path>
+                                    <!-- Vertical Lines -->
+                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                </g>
+                            </svg>
+                            Clear All
+                        </button>
                     </div>
-                    <div class="result-content" id="result" style="white-space: pre-wrap;">Your result will appear here...</div>
-                </div>
-
-                <button onclick="clearAllAmc()" class="btn btn-secondary mt-lg" style="width: 100%;">Clear All</button>
-            </div>
-            <div class="card">
-                <h2 class="card-title">How to Use</h2>
+                </section>
+            </section>
+            <section class="card">
+                <h2 class="card-title">How to Use Random Text Generator Tool</h2>
+                <p class="tool-description">
+                    Generate random text, lorem ipsum, or multilingual sample content instantly.
+                    Perfect for designers, developers, and writers who need placeholder text quickly.
+                </p>
                 <div class="card-body">
                     <ol style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
-                        <li>Enter your text in the input field.</li>
-                        <li>Click the "Generate Text" button.</li>
-                        <li>Copy the result using the copy button.</li>
+                        <li>This Random Text Generator tools allows you to quickly create placeholder content for your
+                            projects.</li>
+                        <li>Simply choose the text mode such as plain text, HTML, or lorem ipsum</li>
+                        <li>Then select the language you want.</li>
+                        <li>Enter the number of words you want to generate and click to <strong>Generate Text</strong>
+                            button</li>
+                        <li>Click the <strong>Copy</strong> button to copy the result.</li>
+                        <li>Use <strong>Clear All</strong> to clear result text</li>
                     </ol>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Free Random Text Generator</h1>
+                    <p class="card-body">
+                        This free random text generator helps you instantly create placeholder text,
+                        lorem ipsum paragraphs, or multilingual content. It is useful for website
+                        design, content testing, typography preview, and development projects.
+                    </p>
+                    <p>
+                        Our Random Text Generator is a simple and powerful online tool designed to quickly create
+                        placeholder text for websites, applications, and design projects. It allows users to generate
+                        plain text, HTML text, or classic lorem ipsum in multiple languages with customizable word
+                        counts. This tool is especially helpful for developers, designers, writers, and students who
+                        need sample text for testing layouts, typography, and content structures. Our goal is to provide
+                        fast, free, and easy-to-use web utilities that improve productivity and simplify everyday
+                        digital tasks.
+                    </p>
+            </section>
+            <section class="card">
+                <h3 class="card-title">Related Text Tools</h3>
+                <div class="card-body">
+                    <ul class="related-tools">
+                        <li>
+                            <a href="tools/text-tools/case-converter.html" hreflang="en" target="_blank"
+                                aria-label="Open Case ConverterTool" title="Case Converter Tool">Case Converter</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/slug-generator.html" hreflang="en" target="_blank"
+                                aria-label="Open Slug Generator Tool" title="Free Slug Generator Tool">Slug
+                                Generator</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/find-replace.html" hreflang="en" target="_blank"
+                                aria-label="Open Find & Replace Tool" title="Find & Replace in bulk">Find & Replace</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/text-calculator.html" hreflang="en" target="_blank"
+                                aria-label="Open Text Calculator Tool"
+                                title="Reading & Speaking Time, Average Word Length">Text Calculator</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/text-cleaner.html" hreflang="en" target="_blank"
+                                aria-label="Open Text Cleaner Tool"
+                                title="Remove Duplicate words, Punctuation, Special characters, Numbers, HTML tags, Emojis, Stop words & Fix spacing issues ">Text
+                                Cleaner</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/text-line-tools.html" hreflang="en" target="_blank"
+                                aria-label="Open Text Line Tool" title="">Line Break Remover</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/text-reverser.html" hreflang="en" target="_blank"
+                                aria-label="Open Text Reverser Tool" title="Free Text Reverse Tool">Text
+                                Reverser</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/text-shuffle.html" hreflang="en" target="_blank"
+                                aria-label="Open Text shuffle Tool" title="Free Text Shuffle Tool">Text shuffle</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/text-sorter.html" hreflang="en" target="_blank"
+                                aria-label="Open Text Sorter Tool" title="Free Text Sorter Tool">Text Sorter</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/whitespace-remover.html" hreflang="en" target="_blank"
+                                aria-label="Open Whitespace Remover Tool" title="Free Whitespace Remover">Whitespace
+                                Remover</a>
+                        </li>
+                        <li>
+                            <a href="tools/text-tools/word-counter.html" hreflang="en" target="_blank"
+                                aria-label="Open Word Counter Tool" title="Word Counter Tool">Word Counter</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Frequently Asked Questions</h2>
+
+                <h3>What is a Random Text Generator?</h3>
+                <p>
+                    A random text generator is an online tool that creates placeholder text automatically. It is
+                    commonly used by designers, developers, and writers to fill layouts and test content formatting.
+                </p>
+                <h3>What is Lorem Ipsum text?</h3>
+                <p>
+                    Lorem Ipsum is a traditional placeholder text used in publishing and web design. It helps designers
+                    focus on layout and typography without being distracted by meaningful content.
+                </p>
+
+                <h3>Can I generate text in different languages?</h3>
+                <p>
+                    Yes, this tool supports multiple languages including English, Spanish, French, German, Chinese,
+                    Hindi, and many more for generating sample content.
+                </p>
+
+                <h3>How many words can i generate?</h3>
+                <p>
+                    You can generate up to 1000 words at a time depending on your input selection. </p>
+
+                <h3>Is this random text generator free to use?</h3>
+                <p>
+                    Yes, this tool is completely free and can be used without any registration or login. </p>
+
+            </section>
+        </section>
+    </main>
     <!-- Category Popup Modal -->
     <div class="category-modal" id="categoryModal">
         <div class="category-modal-overlay" id="categoryOverlay"></div>
@@ -161,10 +431,10 @@
                 <button class="category-close" id="categoryClose">&times;</button>
             </div>
             <div class="category-modal-body grid grid-cols-2 gap-lg">
-                <a href="../../tools/text-tools/" class="category-popup-card">
+                <a href="tools/text-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
                             <polyline points="14 2 14 8 20 8" />
                             <line x1="8" y1="13" x2="16" y2="13" />
@@ -172,28 +442,28 @@
                         </svg></div>
                     <span>Text Tools</span>
                 </a>
-                <a href="../../tools/developer-tools/" class="category-popup-card">
+                <a href="tools/developer-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <polyline points="16 18 22 12 16 6" />
                             <polyline points="8 6 2 12 8 18" />
                         </svg></div>
                     <span>Developer Tools</span>
                 </a>
-                <a href="../../tools/security-tools/" class="category-popup-card">
+                <a href="tools/security-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
                             <path d="M9 12l2 2 4-4" />
                         </svg></div>
                     <span>Security</span>
                 </a>
-                <a href="../../tools/utility-tools/" class="category-popup-card">
+                <a href="tools/utility-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
+                            aria-hidden="true" focusable="false">
                             <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
                             <path d="M16 4l4 4" />
                         </svg></div>
@@ -204,7 +474,7 @@
     </div>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <section class="container">
             <div class="footer-grid">
                 <div>
                     <h3 class="footer-section-title">abcroot</h3>
@@ -215,52 +485,47 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="../../text-tools.html" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="../../developer-tools.html" class="footer-link">Developer Tools</a></li>
-                        <li><a href="../../security-tools.html" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="../../utility-tools.html" class="footer-link">Random & Utility</a></li>
+                        <li><a href="text-tools.html" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="developer-tools.html" class="footer-link">Developer Tools</a></li>
+                        <li><a href="security-tools.html" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="utility-tools.html" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="../../about.html" class="footer-link">About Us</a></li>
-                        <li><a href="../../contact.html" class="footer-link">Contact</a></li>
-                        <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
-                        <li><a href="../../changelog.html" class="footer-link">changelog</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="changelog.html" class="footer-link">changelog</a></li>
                     </ul>
                 </div>
                 <div>
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
                 </div>
-                <h4 class="footer-section-title">Legal</h4>
-                <ul class="footer-links">
-                    <li><a href="../../privacy.html" class="footer-link">Privacy Policy</a></li>
-                    <li><a href="../../terms.html" class="footer-link">Terms & Conditions</a></li>
-                    <li><a href="../../disclaimer.html" class="footer-link">Disclaimer</a></li>
-                </ul>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
-        </div>
-        </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
+            </div>
+        </section>
     </footer>
 
-    <script src="../../js/main.js" defer></script>
-    <script src="../../js/random-text-generator.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/random-text-generator.js" defer></script>
     <!-- FOR FOOTER YEAR UPDATE -->
-    <script src="../../js/main-j.js" defer></script>
+    <script src="js/main-j.js" defer></script>
     <!-- FOR MODEL OPEN -->
-    <script src="../../js/main-m.js" defer></script>
+    <script src="js/main-m.js" defer></script>
     <!-- FOR SEARCH BY INDEX -->
-    <script src="../../js/search-index.js" defer></script>
+    <script src="js/search-index.js" defer></script>
     <!-- COPY AND CLEAR -->
-    <script src="../../js/main-c.js" defer></script>
+    <script src="js/main-c.js" defer></script>
 </body>
 
 
 </html>
-
-
-
-
