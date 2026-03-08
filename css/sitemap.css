@@ -19,7 +19,7 @@
   margin-top: var(--space-xl);
   background: #fff;
   border-radius: var(--radius);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
 
@@ -32,13 +32,15 @@
 ================================= */
 .table-wrapper {
   width: 100%;
-  overflow-x: auto; /* Important for mobile */
+  overflow-x: auto;
+  /* Important for mobile */
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 700px; /* Prevent breaking layout */
+  min-width: 700px;
+  /* Prevent breaking layout */
 }
 
 thead {
@@ -75,25 +77,49 @@ a:hover {
 @media (max-width: 768px) {
 
   .section {
-    padding: var(--space-lg) var(--space-sm);
+    padding: 0;
   }
 
   .page-title {
     font-size: 1.5rem;
   }
-th{
-   display: none;
-}
+
+  th {
+    display: none;
+  }
+
+  tr td {
+    display: block;
+  }
+
   th,
   td {
-    padding: 10px;
+    padding: 0;
     font-size: 0.85rem;
   }
-   td{
-   width:100%;
-   }
+
+  tr {
+    margin-bottom: 4px;
+    border-bottom: 2px black solid;
+  }
+
+  td {
+    /* width:100%; */
+    height: fit-content;
+    padding: 0 5px;
+    margin: 2px 0;
+    background-color: rgb(241, 248, 175);
+  }
+
+  td a {
+    font-weight: 700;
+  }
+
+  .card {
+    padding-left: 0;
+  }
 
   .card-body {
-    padding: var(--space-sm);
+    padding: 0;
   }
 }
