@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BASIC SEO -->
+    <title>Free Text Analysis Tool | Word Count, Reading Time Calculator - abcroot</title>
+    <meta name="description"
+        content="Free online text analysis tool to calculate word count, sentences, paragraphs, reading time, speaking time, characters, and longest or shortest words.">
+    <meta name="keywords"
+        content="text calculator, reading time calculator, speaking time estimator, average word length calculator, text analysis tool, word statistics tool">
+    <meta name="author" content="abcroot">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://abcroot.xyz/text-analysis-tool.html">
+    <!-- THEME -->
+    <meta name="theme-color" content="#0A315B">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+
+    <!-- APPLE ICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+    <!-- WINDOWS TILE -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/android-192.png">
+
+    <!-- APP MODE (iOS PWA) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-title" content="abcroot Tools">
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="abcroot">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Free Text Analysis - Reading & Speaking Time Tool">
+    <meta property="og:description"
+        content="Estimate reading time, speaking time, and word statistics instantly with this free online text analysis tool.">
+    <meta property="og:url" content="https://abcroot.xyz/text-analysis.html">
+    <meta property="og:image" content="https://abcroot.xyz/assets/text-calculator-preview.png">
+    <meta property="og:image" content="https://abcroot.xyz/assets/preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Text Analysis tool preview">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Text Analysis - Reading & Speaking Time">
+    <meta name="twitter:description"
+        content="Instantly calculate reading time, speaking time, and average word length online. Free and secure.">
+    <meta name="twitter:image" content="https://abcroot.xyz/assets/preview.png">
+    <meta name="twitter:image:alt" content="Case Converter tool preview">
+
+    <!-- PERFORMANCE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- ANALYTICS -->
+    <script src="/js/analytics.js"></script>
+    <!-- CSS PRELOAD -->
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="preload" href="/css/main-a.css" as="style">
+    <link rel="preload" href="/css/text-analysis.css" as="style">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main-a.css">
+    <link rel="stylesheet" href="/css/text-analysis.css">
+    <!-- WEB APPLICATION SCHEMA -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Text Analysis",
+  "url": "https://abcroot.xyz/text-analysis-tool.html/",
+  "description": "Free online text calculator to estimate reading time, speaking time, and analyze word statistics instantly.",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "creator": {
+        "@type": "Organization",
+        "name": "abcroot",
+        "url": "https://abcroot.xyz"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+</script>
+    <!-- FAQ SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is a text analysis tool?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"A text analysis tool evaluates written content and provides useful statistics such as word count, sentence count, paragraph count, character count, and estimated reading or speaking time."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Who can use this text analysis tool?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Anyone can use this tool, including students, bloggers, journalists, marketers, teachers, and public speakers who want to quickly analyze the structure of their content."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Text Analysis",
+  "url":"https://abcroot.xyz/text-analysis-tool.html",
+  "description":"Free online text analysis tool to calculate word count, sentences, paragraphs, reading time, speaking time, characters, and longest or shortest words.",
+  "applicationCategory":"UtilityApplication",
+  "operatingSystem":"Any",
+  "browserRequirements":"Requires JavaScript",
+  "isAccessibleForFree":true,
+  "featureList":[
+    "Word count calculator",
+    "Sentence count analyzer",
+    "Paragraph count detection",
+    "Character count with spaces",
+    "Character count without spaces",
+    "Reading time estimation for fast, average, and slow readers",
+    "Speaking time estimation for fast, average, and slow speakers",
+    "Longest word detection",
+    "Shortest word detection",
+    "Real-time text analysis",
+    "Copy analysis results to clipboard",
+    "Download analysis report as TXT",
+    "Download analysis report as PDF"
+  ]
+}
+</script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container navbar-container">
+            <a href="/" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
+            <div class="navbar-search">
+                <div class="search-input">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="searchInput" placeholder="Search tools..." autocomplete="off"
+                        aria-label="Search tools">
+                    <div id="searchResults" class="search-results"></div>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-links">
+                    <li><a href="/about.html" class="navbar-link">About</a></li>
+                    <li><a href="/contact.html" class="navbar-link">Contact</a></li>
+                    <li class="navbar-link" id="categoryBtn">Category</li>
+                </ul>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="hamburger"><span class="mobile-menu-icon"></span></button>
+        </div>
+    </nav>
+    <!-- Heading -->
+    <header class="page-header page-header-sm">
+        <h1 class="page-title" aria-label="Page title">Text Analysis</h1>
+    </header>
+    <!-- Main -->
+    <main class="section-sm">
+        <section class="container">
+            <div class="tool-interface">
+                <div class="p1">
+                    <div class="form-group">
+                        <textarea id="input-text" class="form-textarea"
+                            placeholder="Paste your blog article or speech text here..." rows="6"
+                            style="font-family: inherit;"></textarea>
+                        <button onclick="clearAll()" class="clear-btn btn btn-secondary mt-lg actions-btn"
+                            style="width: 100%;">
+                            <svg class="code-option__button-svg" width="17" height="17" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <!-- Trash Bin Body -->
+                                    <path d="M3 6h18"></path>
+                                    <path
+                                        d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                    </path>
+                                    <!-- Vertical Lines -->
+                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                </g>
+                            </svg>
+                            Clear All
+                        </button>
+                    </div>
+                    <section class="result-card" aria-live="polite" role="status">
+                        <div class="dynamic-analysis">
+                            Word: <span id="word">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Sentence: <span id="sentence">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Paragraph: <span id="paragraph">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Character (with space): <span id="char-with-space">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Character (without space): <span id="char-with-out-space">0</span>
+                        </div>
+                        <div class="dynamic-analysis reading-section">
+                            <strong class="dynamic-analysis-head">Reading Time Variants</strong>
+                            <div class="dynamic-sub-analysis">
+                                Fast Reader (300 wpm): <span id="fast-reader">0</span>
+                            </div>
+                            <div class="dynamic-sub-analysis">
+                                Average Reader (220 wpm): <span id="avg-reader">0</span>
+                            </div>
+                            <div class="dynamic-sub-analysis">
+                                Slow Reader (150 wpm): <span id="slow-reader">0</span>
+                            </div>
+                        </div>
+                        <div class="dynamic-analysis speaking-section">
+                            <strong class="dynamic-analysis-head">Speaking Time Variants</strong>
+                            <div class="dynamic-sub-analysis">
+                                Fast Speaker (180 wpm): <span id="fast-speaker">0</span>
+                            </div>
+                            <div class="dynamic-sub-analysis">
+                                Average Speaker (150 wpm): <span id="avg-speaker">0</span>
+                            </div>
+                            <div class="dynamic-sub-analysis">
+                                Slow Speaker (120 wpm): <span id="slow-speaker">0</span>
+                            </div>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Longest word: <span id="long-word">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Shortest word: <span id="short-word">0</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="new">
+                    <button onclick="copyResult()" class="copy-btn actions-btn" id="copy-btn">
+                        <svg class="code-option__button-svg" width="13" height="17" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" focusable="false">
+                            <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd">
+                                <path d="M5 5h7v11H5z"></path>
+                                <path d="M1 15V1h10"></path>
+                            </g>
+                        </svg>
+                        Copy to Clipboard
+                    </button>
+                    <button class="actions-btn dldtxt" onclick="downloadTXT()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+
+                            <path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                            <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <path d="M5 21H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                        </svg>
+                        Download AS TXT
+                    </button>
+                    <button class="actions-btn dldpdf" onclick="downloadPDF()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+
+                            <path d="M12 3V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                            <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+
+                            <path d="M5 21H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                        </svg>
+                        Download AS PDF
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="card-title">How to Use the Text Analysis Tool</h2>
+
+            <p class="tool-description">
+                The Text Analysis Tool helps you quickly evaluate written content and understand
+                important statistics such as word count, sentence count, reading time, speaking
+                time, and character count. It works instantly in your browser and requires no
+                downloads or sign-ups.
+            </p>
+
+            <div class="card-body">
+                <ol style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
+
+                    <li>
+                        Type or paste your text into the input box provided at the top of the tool.
+                    </li>
+
+                    <li>
+                        As soon as you enter text, the tool automatically analyzes it and calculates
+                        important metrics such as words, sentences, paragraphs, and characters.
+                    </li>
+
+                    <li>
+                        View the estimated <strong>reading time</strong> and <strong>speaking time</strong>
+                        based on different speed levels including fast, average, and slow.
+                    </li>
+
+                    <li>
+                        Check additional insights such as the <strong>longest word</strong> and
+                        <strong>shortest word</strong> in your text.
+                    </li>
+
+                    <li>
+                        Use the <strong>Copy</strong> button to copy the analysis results to your
+                        clipboard for quick sharing or documentation.
+                    </li>
+
+                    <li>
+                        You can also download the results as a <strong>TXT</strong> or
+                        <strong>PDF report</strong> for future reference.
+                    </li>
+
+                    <li>
+                        Click <strong>Clear All</strong> whenever you want to remove the current text
+                        and analyze new content.
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="card-title">About This Tool</h2>
+
+            <p class="card-body">
+                The Text Analysis Tool is a free online utility designed to help users quickly
+                evaluate the structure and readability of their written content. By analyzing
+                your text in real time, the tool calculates important statistics such as word
+                count, sentence count, paragraph count, character count, and estimated reading
+                and speaking time.
+            </p>
+
+            <p class="card-body">
+                This tool is especially useful for bloggers, students, content writers,
+                educators, marketers, and public speakers who need to understand how long their
+                content will take to read or present. It helps optimize articles, speeches,
+                presentations, and social media content to ensure they match the intended
+                audience and time limits.
+            </p>
+
+            <p class="card-body">
+                All calculations are performed instantly in your browser, meaning your text is
+                never uploaded or stored on a server. This ensures complete privacy while
+                providing fast and accurate text analysis.
+            </p>
+        </section>
+        <section class="card">
+            <h3 class="card-title">Related Text Tools</h3>
+            <div class="card-body">
+                <ul class="related-tools">
+                    <li>
+                        <a href="/case-converter.html" hreflang="en" aria-label="Open Case ConverterTool"
+                            title="Case Converter Tool">Case Converter</a>
+                    </li>
+                    <li>
+                        <a href="/random-text-generator.html" hreflang="en" aria-label="Open Random Text Generator Tool"
+                            title="Free Random Text Generator Tool">Random
+                            Text Generator</a>
+                    </li>
+                    <li>
+                        <a href="/find-replace.html" hreflang="en" aria-label="Open Find & Replace Tool"
+                            title="Find & Replace in bulk">Find & Replace</a>
+                    </li>
+                    <li>
+                        <a href="/slug-generator.html" hreflang="en" aria-label="Open Slug Generator Tool"
+                            title="Slug Generator">Slug Generator</a>
+                    </li>
+                    <li>
+                        <a href="/text-cleaner.html" hreflang="en" aria-label="Open Text Cleaner Tool"
+                            title="Remove Duplicate words, Punctuation, Special characters, Numbers, HTML tags, Emojis, Stop words & Fix spacing issues ">Text
+                            Cleaner</a>
+                    </li>
+                    <li>
+                        <a href="/text-line-tools.html" hreflang="en" aria-label="Open Text Line Tool" title="">Line
+                            Break Remover</a>
+                    </li>
+                    <li>
+                        <a href="/text-reverser.html" hreflang="en" aria-label="Open Text Reverser Tool"
+                            title="Free Text Reverse Tool">Text
+                            Reverser</a>
+                    </li>
+                    <li>
+                        <a href="/text-shuffle.html" hreflang="en" aria-label="Open Text shuffle Tool"
+                            title="Free Text Shuffle Tool">Text shuffle</a>
+                    </li>
+                    <li>
+                        <a href="/text-sorter.html" hreflang="en" aria-label="Open Text Sorter Tool"
+                            title="Free Text Sorter Tool">Text Sorter</a>
+                    </li>
+                    <li>
+                        <a href="/whitespace-remover.html" hreflang="en" aria-label="Open Whitespace Remover Tool"
+                            title="Free Whitespace Remover">Whitespace
+                            Remover</a>
+                    </li>
+                    <li>
+                        <a href="/word-counter.html" hreflang="en" aria-label="Open Word Counter Tool"
+                            title="Word Counter Tool">Word Counter</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="card-title">Frequently Asked Questions</h2>
+
+            <h3>What is a text analysis tool?</h3>
+            <p>
+                A text analysis tool evaluates written content and provides useful statistics
+                such as word count, sentence count, paragraph count, character count, and
+                estimated reading or speaking time.
+            </p>
+
+            <h3>How is reading time calculated?</h3>
+            <p>
+                Reading time is estimated based on common reading speeds. Fast readers average
+                around 300 words per minute, average readers around 220 words per minute, and
+                slow readers about 150 words per minute.
+            </p>
+
+            <h3>How is speaking time calculated?</h3>
+            <p>
+                Speaking time is calculated using average speaking speeds. A fast speaker may
+                deliver about 180 words per minute, while average speaking speed is around
+                150 words per minute and slower speech is approximately 120 words per minute.
+            </p>
+
+            <h3>Why is word count important?</h3>
+            <p>
+                Word count helps writers maintain the appropriate length for articles,
+                assignments, blog posts, and speeches. It also helps ensure content meets
+                specific requirements or time limits.
+            </p>
+
+            <h3>Who can use this text analysis tool?</h3>
+            <p>
+                Anyone can use this tool, including students, bloggers, journalists, marketers,
+                teachers, and public speakers who want to quickly analyze the structure of
+                their content.
+            </p>
+
+            <h3>Is this text analysis tool free?</h3>
+            <p>
+                Yes, this tool is completely free to use. It works directly in your browser and
+                does not require registration or downloads.
+            </p>
+
+            <h3>Does this tool store my text?</h3>
+            <p>
+                No. All analysis happens locally in your browser, which means your text is not
+                uploaded, saved, or shared anywhere.
+            </p>
+
+        </section>
+        </section>
+    </main>
+    <!-- Category Popup Modal -->
+    <div class="category-modal" id="categoryModal">
+        <div class="category-modal-overlay" id="categoryOverlay"></div>
+        <div class="category-modal-content">
+            <div class="category-modal-header">
+                <h3>Select Category</h3>
+                <button class="category-close" id="categoryClose">&times;</button>
+            </div>
+            <div class="category-modal-body grid grid-cols-2 gap-lg">
+                <a href="/text-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="8" y1="13" x2="16" y2="13" />
+                            <line x1="8" y1="17" x2="16" y2="17" />
+                        </svg></div>
+                    <span>Text Tools</span>
+                </a>
+                <a href="/developer-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg></div>
+                    <span>Developer Tools</span>
+                </a>
+                <a href="/security-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg></div>
+                    <span>Security</span>
+                </a>
+                <a href="/utility-tools/" class="category-popup-card">
+                    <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true" focusable="false">
+                            <path d="M14.7 6.3a4 4 0 0 0 5 5l-9 9-4-4 9-9z" />
+                            <path d="M16 4l4 4" />
+                        </svg></div>
+                    <span>Utility</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <footer class="footer">
+        <section class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-section-title">abcroot</h3>
+                    <p style="color: var(--color-text-secondary); font-size: 0.875rem; margin-bottom: var(--space-md);">
+                        Professional online tools for everyone. Fast, free, and privacy-focused.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="/text-tools/" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="/developer-tools/" class="footer-link">Developer Tools</a></li>
+                        <li><a href="/security-tools/" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="/utility-tools/" class="footer-link">Random & Utility</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html" class="footer-link">About Us</a></li>
+                        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="/sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="/changelog.html" class="footer-link">changelog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-section-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="f-year"></span> abcroot. All rights reserved. Built with care for productivity.
+                </p>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/text-analysis-tool.js" defer></script>
+    <!-- FOR FOOTER YEAR UPDATE -->
+    <script src="/js/main-j.js" defer></script>
+    <!-- FOR MODEL OPEN -->
+    <script src="/js/main-m.js" defer></script>
+    <!-- FOR SEARCH BY INDEX -->
+    <script src="/js/search-index.js" defer></script>
+
+</body>
+
+</html>
