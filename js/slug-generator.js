@@ -57,15 +57,24 @@ function generateSlug(type) {
 
 
 function copyResult() {
-    const text = document.getElementById('input-text').value;
-    if (text === '') {
-        showNotification('No result to copy', 'error');
+    const text = document.getElementById('result').textContent;
+    if (text === 'Your generated slug will appear here...') {
+        showNotification('Please enter some text first', 'error');
         return;
     }
-    copyToClipboard(text, document.getElementById('copy-btn'));
+    else {
+        copyToClipboard(text, document.getElementById('copy-btn'));
+    }
 }
 
 function clearAll() {
-    document.getElementById('input-text').value = '';
-    document.getElementById('result').textContent = 'Your generated slug will appear here...';
+    if (document.getElementById('input-text').value == '' || document.getElementById('result').textContent == 'Your result will appear here...') {
+        showNotification('Nothing to clear!', 'error');
+        return;
+    }
+    else{
+        document.getElementById('input-text').value = '';
+        document.getElementById('result').textContent = 'Your generated slug will appear here...';
+        showNotification("All clear", 'success')
+    }
 }
