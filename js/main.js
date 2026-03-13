@@ -2,9 +2,11 @@
    TOOLZY - Main JavaScript
    Vanilla JS functionality
    ============================================ */
+
 // ============================================
 // MOBILE MENU TOGGLE
 // ============================================
+
 document.addEventListener('DOMContentLoaded', function () {
   const mobileToggle = document.querySelector('.mobile-menu-toggle');
   const navbarMenu = document.querySelector('.navbar-menu');
@@ -110,7 +112,7 @@ function fallbackCopy(text, button) {
 }
 
 function handleCopySuccess(button) {
-  showNotification('Copied !', 'success');
+  showNotification('Text copied to clipboard', 'success');
 }
 
 // ============================================
@@ -184,7 +186,12 @@ function showNotification(message, type = 'info') {
   } else if (type === 'error') {
     notification.style.background = '#ef4444';
     notification.style.color = 'white';
-  } else {
+  }
+  else if (type === 'warn') {
+    notification.style.background = '#f59e0b'; // amber / orange
+    notification.style.color = 'white';
+  }
+  else {
     notification.style.background = '#2563eb';
     notification.style.color = 'white';
   }
@@ -356,3 +363,5 @@ window.validateForm = validateForm;
 window.debounce = debounce;
 window.formatNumber = formatNumber;
 window.escapeHtml = escapeHtml;
+
+// 
