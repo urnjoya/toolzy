@@ -69,8 +69,6 @@ function clearAll() {
     else {
         document.getElementById('input-text').value = '';
         document.getElementById('result').textContent = 'Your result will appear here...';
-        const txe = '';
-        updateStats(txe);
         showNotification('All clear', 'success');
     }
 }
