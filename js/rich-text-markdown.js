@@ -79,3 +79,24 @@ function perform() {
         resultEl.innerHTML = "Conversion error: " + error.message;
     }
 }
+// 
+function copyResult() {
+    const resultEl = document.getElementById("result").textContent;
+    if (resultEl == 'Your result will appear here...') {
+        showNotification('No result to copy', "error");
+        return;
+    }
+    else{
+        copyToClipboard(resultEl, document.getElementById('copy-btn'));
+        showNotification("Copied!",'success')
+    }
+}
+function clearAll() {
+    if (document.getElementById("input-text").textContent == "" && document.getElementById("result").textContent == "Your result will appear here...") {
+        showNotification('Nothing to clear!', 'error');
+        return;
+    }
+    document.getElementById("input-text").textContent = "";
+    document.getElementById("result").textContent = "Your result will appear here...";
+    showNotification('All clear', 'success');
+}
