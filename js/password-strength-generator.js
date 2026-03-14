@@ -182,6 +182,18 @@ function updateStrengthUI(password, isCustom) {
 ================================= */
 
 document.getElementById("custom-password-input")
-.addEventListener("input", function () {
-    updateStrengthUI(this.value, true);
-});
+    .addEventListener("input", function () {
+        updateStrengthUI(this.value, true);
+    });
+// 
+function copyResult() {
+    const result1 = document.getElementById('result').textContent;
+    if (result1 == "Generated Password") {
+        showNotification('Please enter some text first', 'error')
+        return
+    }
+    else {
+        copyToClipboard(result1, document.getElementById('copy-btn'));
+        showNotification('copied!','success');
+    }
+}
