@@ -2,16 +2,43 @@
 <html lang="en-US">
 
 <head>
-    <base href="../../">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Tools - Free Online Code Utilities | abcroot</title>
     <meta name="description"
         content="Free online developer tools including code formatters, validators, encoders, and generators. Fast, browser-based, and privacy-focused utilities for developers.">
     <meta name="keywords"
         content="developer tools, code formatter, JSON formatter, base64 encoder, hash generator, online code tools, free developer utilities, browser-based tools">
     <meta name="author" content="abcroot">
     <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://abcroot.xyz/developer-tools/">
+
+    <!-- THEME -->
+    <meta name="theme-color" content="#0A315B">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+
+    <!-- APPLE ICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+    <!-- WINDOWS TILE -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/android-192.png">
+
+    <!-- APP MODE (iOS PWA) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-title" content="abcroot Tools">
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -19,27 +46,31 @@
     <meta property="og:title" content="Free Online Developer Tools | abcroot">
     <meta property="og:description"
         content="Professional online developer tools for formatting, encoding, validating, and generating code. Fast, free, and privacy-focused.">
-    <meta property="og:url" content="https://abcroot.xyz/tools/developer-tools/">
-    <meta property="og:image" content="https://abcroot.xyz/assets/developer-tools-preview.png">
+    <meta property="og:url" content="https://abcroot.xyz/developer-tools/">
+    <meta property="og:image" content="https://abcroot.xyz/assets/preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="tool preview">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Developer Tools – Format, Encode & Validate Code Online">
+    <meta name="twitter:title" content="Developer Tools - Format, Encode & Validate Code Online">
     <meta name="twitter:description"
         content="Access free online developer tools for code formatting, encoding, hashing, and validation. Fast, secure, and browser-based.">
-    <meta name="twitter:image" content="https://abcroot.xyz/assets/developer-tools-preview.png">
+    <meta name="twitter:image" content="https://abcroot.xyz/assets/preview.png">
+    <meta name="twitter:image:alt" content="tool preview">
 
-    <title>Developer Tools – Free Online Code Utilities | abcroot</title>
-    <link rel="canonical" href="https://abcroot.xyz/tools/developer-tools/">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <!-- PERFORMANCE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <script src="js/analytics.js"></script>
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- ANALYTICS -->
+    <script src="/js/analytics.js"></script>
+
+    <!-- CSS PRELOAD -->
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="stylesheet" href="/css/main.css">
 
     <script type="application/ld+json">
 {
@@ -47,25 +78,19 @@
   "@type": "ItemList",
   "name": "Developer Tools",
   "description": "A curated collection of free online developer tools including code formatters, encoders, validators, and generators. Fast, browser-based, and privacy-first.",
-  "url": "https://abcroot.xyz/tools/developer-tools/",
+  "url": "https://abcroot.xyz/developer-tools/",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "JSON Formatter",
-      "url": "https://abcroot.xyz/tools/developer-tools/json-formatter.html"
+      "name": "Number Conversion",
+      "url": "https://abcroot.xyz/number-conversion.html"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Base64 Encoder/Decoder",
-      "url": "https://abcroot.xyz/tools/developer-tools/base64.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Hash Generator",
-      "url": "https://abcroot.xyz/tools/developer-tools/hash-generator.html"
+      "name": "Text Markdown Converter",
+      "url": "https://abcroot.xyz/text-markdown-converter.html"
     }
   ],
   "creator": {
@@ -81,7 +106,7 @@
     <!-- NAVIGATION -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container navbar-container">
-            <a href="" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
+            <a href="/" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
             <div class="navbar-search">
                 <div class="search-input">
                     <span class="search-icon">🔍</span>
@@ -95,8 +120,8 @@
             </button>
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="about.html" class="navbar-link">About</a></li>
-                    <li><a href="contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="/about.html" class="navbar-link">About</a></li>
+                    <li><a href="/contact.html" class="navbar-link">Contact</a></li>
                     <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
@@ -127,7 +152,7 @@
         <section class="container">
             <h2 class="text-center mb-lg">Explore Other Categories</h2>
             <div class="grid grid-cols-3">
-                <a href="tools/text-tools/" class="card category-card">
+                <a href="/text-tools/" class="card category-card">
                     <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                             stroke-linejoin="round" aria-hidden="true">
@@ -141,7 +166,7 @@
                         utilities.</p>
                 </a>
 
-                <a href="tools/security-tools/" class="card category-card">
+                <a href="/security-tools/" class="card category-card">
                     <div class="category-card-icon"><svg class="icon" width="48" height="48" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                             stroke-linejoin="round" aria-hidden="true">
@@ -153,7 +178,7 @@
                         tools.</p>
                 </a>
 
-                <a href="tools/utility-tools/" class="card category-card">
+                <a href="/utility-tools/" class="card category-card">
                     <div class="category-card-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                             stroke-linejoin="round" aria-hidden="true">
@@ -239,7 +264,7 @@
                 <button class="category-close" id="categoryClose">&times;</button>
             </div>
             <div class="category-modal-body grid grid-cols-2 gap-lg">
-                <a href="tools/text-tools/" class="category-popup-card">
+                <a href="/text-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
@@ -259,7 +284,7 @@
                         </svg></div>
                     <span>Developer Tools</span>
                 </a>
-                <a href="tools/security-tools/" class="category-popup-card">
+                <a href="/security-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
@@ -268,7 +293,7 @@
                         </svg></div>
                     <span>Security</span>
                 </a>
-                <a href="tools/utility-tools/" class="category-popup-card">
+                <a href="/utility-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
@@ -294,29 +319,29 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="tools/text-tools/" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="tools/developer-tools/" class="footer-link">Developer Tools</a></li>
-                        <li><a href="tools/security-tools/" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="tools/utility-tools/" class="footer-link">Random & Utility</a></li>
+                        <li><a href="/text-tools/" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="/developer-tools/" class="footer-link">Developer Tools</a></li>
+                        <li><a href="/security-tools/" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="/utility-tools/" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="about.html" class="footer-link">About Us</a></li>
-                        <li><a href="contact.html" class="footer-link">Contact</a></li>
-                        <li><a href="changelog.html" class="footer-link">Changelog</a></li>
-                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="/about.html" class="footer-link">About Us</a></li>
+                        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="/changelog.html" class="footer-link">Changelog</a></li>
+                        <li><a href="/sitemap.html" class="footer-link">Sitemap</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="footer-section-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
-                        <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
@@ -327,14 +352,14 @@
         </section>
     </footer>
 
-    <script src="js/main.js" defer></script>
-    <script src="js/developer-tools.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script src="/js/developer-tools.js" defer></script>
     <!-- FOR FOOTER YEAR UPDATE -->
-    <script src="js/main-j.js" defer></script>
+    <script src="/js/main-j.js" defer></script>
     <!-- FOR MODEL OPEN -->
-    <script src="js/main-m.js" defer></script>
+    <script src="/js/main-m.js" defer></script>
     <!-- FOR SEARCH BY INDEX -->
-    <script src="js/search-index.js" defer></script>
+    <script src="/js/search-index.js" defer></script>
 </body>
 
 </html>
