@@ -33,82 +33,82 @@
   },
   {
     "title": "Text Tools",
-    "url": "/tools/text-tools/"
+    "url": "/text-tools/"
   },
   {
     "title": "Developer Tools",
-    "url": "/tools/developer-tools/"
+    "url": "/developer-tools/"
   },
   {
     "title": "Security & Privacy",
-    "url": "/tools/security-tools/"
+    "url": "/security-tools/"
   },
   {
     "title": "Random & Utility",
-    "url": "/tools/utility-tools/"
+    "url": "/utility-tools/"
   },
   {
     "title": "Case Converter",
-    "url": "/tools/text-tools/case-converter.html"
+    "url": "/case-converter.html"
   },
   {
     "title": "Find & Replace",
-    "url": "/tools/text-tools/find-replace.html"
+    "url": "/find-replace.html"
   },
   {
     "title": "Random Text Generator",
-    "url": "/tools/text-tools/random-text-generator.html"
+    "url": "/random-text-generator.html"
   },
   {
     "title": "Slug Generator",
-    "url": "/tools/text-tools/slug-generator.html"
+    "url": "/slug-generator.html"
   },
   {
-    "title": "Text Calculator",
-    "url": "/tools/text-tools/text-calculator.html"
+    "title": "Text Analysis",
+    "url": "/text-analysis.html"
   },
   {
     "title": "Text Cleaner",
-    "url": "/tools/text-tools/text-cleaner.html"
+    "url": "/text-cleaner.html"
   },
   {
     "title": "Text Line Tools",
-    "url": "/tools/text-tools/text-line-tools.html"
+    "url": "/text-line-tools.html"
   },
   {
     "title": "Text Reverser",
-    "url": "/tools/text-tools/text-reverser.html"
+    "url": "/text-reverser.html"
   },
   {
     "title": "Text Shuffle",
-    "url": "/tools/text-tools/text-shuffle.html"
+    "url": "/text-shuffle.html"
   },
   {
     "title": "Text Sorter",
-    "url": "/tools/text-tools/text-sorter.html"
+    "url": "/text-sorter.html"
   },
   {
     "title": "Whitespace Remover",
-    "url": "/tools/text-tools/whitespace-remover.html"
+    "url": "/whitespace-remover.html"
   },
   {
     "title": "Word Counter",
-    "url": "/tools/text-tools/word-counter.html"
+    "url": "/word-counter.html"
   },
   {
     "title": "Number Conversion",
-    "url": "/tools/developer-tools/number-conversion.html"
+    "url": "/number-conversion.html"
   },
   {
     "title": "Text Markdown Converter",
-    "url": "/tools/developer-tools/text-markdown-converter.html"
+    "url": "/text-markdown-converter.html"
   },
   {
     "title": "Password Generator",
-    "url": "/tools/security-tools/password-generator.html"
+    "url": "/password-generator.html"
   },
   {
     "title": "Random Color Generator",
-    "url": "/tools/utility-tools/random-color-generator.html"
+    "url": "/random-color-generator.html"
   }
 ]
