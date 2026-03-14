@@ -1,66 +1,164 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-    <base href="../../">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free online word counter tool to count words, characters (with and without spaces), sentences, paragraphs, lines, and unique words instantly. Fast, accurate, and privacy-focused.">
+    <title>Word Counter - Character, Sentence & Paragraph Counter | abcroot</title>
+    <meta name="description"
+        content="Free online word counter tool to count words, characters (with and without spaces), sentences, paragraphs, lines, and unique words instantly. Fast, accurate, and privacy-focused.">
+    <meta name="keywords"
+        content="word counter, character counter, sentence counter, paragraph counter, line counter, unique word counter, text statistics tool, word count online, character count tool">
     <meta name="author" content="abcroot">
-    <meta name="keywords" content="word counter, character counter, sentence counter, paragraph counter, line counter, unique word counter, text statistics tool, word count online, character count tool">
     <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://abcroot.xyz/word-counter.html">
+
+    <!-- THEME -->
+    <meta name="theme-color" content="#0A315B">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+
+    <!-- APPLE ICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+    <!-- WINDOWS TILE -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/android-192.png">
+
+    <!-- APP MODE (iOS PWA) -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-title" content="abcroot Tools">
+    <meta name="mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="abcroot">
     <meta property="og:title" content="Free Online Word Counter Tool | abcroot">
-    <meta property="og:description" content="Count words, characters, sentences, paragraphs, and more instantly. 100% free and privacy-friendly text statistics tool.">
-    <meta property="og:url" content="https://abcroot.xyz/tools/text-tools/word-counter.html">
-    <meta property="og:image" content="https://abcroot.xyz/assets/word-counter-preview.png">
+    <meta property="og:description"
+        content="Count words, characters, sentences, paragraphs, and more instantly. 100% free and privacy-friendly text statistics tool.">
+    <meta property="og:url" content="https://abcroot.xyz/word-counter.html">
+    <meta property="og:image" content="https://abcroot.xyz/assets/preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Word counter tool preview">
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Word Counter – Free Text Statistics Tool">
-    <meta name="twitter:description" content="Instantly count words, characters, sentences, and more online. Fast, secure, and completely free.">
-    <meta name="twitter:image" content="https://abcroot.xyz/assets/word-counter-preview.png">
-    <title>Word Counter – Character, Sentence & Paragraph Counter | abcroot</title>
-    <link rel="canonical" href="https://abcroot.xyz/tools/text-tools/word-counter.html">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="twitter:title" content="Word Counter - Free Text Statistics Tool">
+    <meta name="twitter:description"
+        content="Instantly count words, characters, sentences, and more online. Fast, secure, and completely free.">
+    <meta name="twitter:image" content="https://abcroot.xyz/assets/preview.png">
+    <meta name="twitter:image:alt" content="Word Counter tool preview">
+
+    <!-- PERFORMANCE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <script src="js/analytics.js"></script>
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="preload" href="css/main-a.css" as="style">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main-a.css">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- ANALYTICS -->
+    <script src="/js/analytics.js"></script>
+
+    <!-- CSS PRELOAD -->
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="preload" href="/css/main-a.css" as="style">
+    <link rel="preload" href="/css/text-analysis.css" as="style">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main-a.css">
+    <link rel="stylesheet" href="/css/text-analysis.css">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
+  "@type": "WebApplication",
   "name": "Word Counter",
-  "applicationCategory": "UtilityApplication",
-  "operatingSystem": "Web",
+  "url": "https://abcroot.xyz/word-counter.html",
   "description": "Free online word counter tool to count words, characters, sentences, paragraphs, lines, and unique words instantly.",
-  "url": "https://abcroot.xyz/tools/text-tools/word-counter.html",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "creator": {
-    "@type": "Organization",
-    "name": "abcroot",
-    "url": "https://abcroot.xyz"
-  }
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "creator": {
+        "@type": "Organization",
+        "name": "abcroot",
+        "url": "https://abcroot.xyz"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <!-- FAQ SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is a word counter tool?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"A word counter tool is an online utility that counts the number of words in a piece of text. It can also provide additional statistics such as character count, sentence count, and paragraph count."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"How does a word counter work?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"A word counter analyzes the text entered by the user and calculates different statistics like words, characters, sentences, lines, and paragraphs using automated text processing."
+          }
+        }
+      ]
+    }
+    </script>
+
+
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"Word Counter",
+  "url":"https://abcroot.xyz/word-counter.html",
+  "description":"Free online word counter tool to count words, characters (with and without spaces), sentences, paragraphs, lines, and unique words instantly. Fast, accurate, and privacy-focused.",
+  "applicationCategory":"UtilityApplication",
+  "operatingSystem":"Any",
+  "browserRequirements":"Requires JavaScript",
+  "isAccessibleForFree":true,
+  "featureList":[
+  "Count total words in text instantly",
+  "Count sentences using punctuation detection",
+  "Count paragraphs based on line breaks",
+  "Count total lines in multi-line text",
+  "Calculate character count including spaces",
+  "Calculate character count excluding spaces",
+  "Estimate reading time for fast, average, and slow readers",
+  "Estimate speaking time for fast, average, and slow speakers",
+  "Detect the longest word in the text",
+  "Detect the shortest word in the text",
+  "Analyze text automatically while typing",
+  "Copy or export analysis results easily"
+  ]
 }
 </script>
+
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container navbar-container">
-            <a href="" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
+            <a href="/" class="navbar-logo" aria-label="abcroot homepage">abcroot</a>
             <div class="navbar-search">
                 <div class="search-input">
                     <span class="search-icon">🔍</span>
@@ -71,8 +169,8 @@
             </div>
             <div class="navbar-menu">
                 <ul class="navbar-links">
-                    <li><a href="about.html" class="navbar-link">About</a></li>
-                    <li><a href="contact.html" class="navbar-link">Contact</a></li>
+                    <li><a href="/about.html" class="navbar-link">About</a></li>
+                    <li><a href="/contact.html" class="navbar-link">Contact</a></li>
                     <li class="navbar-link" id="categoryBtn">Category</li>
                 </ul>
             </div>
@@ -86,12 +184,14 @@
     <!-- Main -->
     <main class="section-sm">
         <section class="container">
-            <section class="tool-interface">
+            <div class="tool-interface">
                 <div class="p1">
                     <div class="form-group">
-                        <textarea id="input-text" class="form-textarea" placeholder="Type or paste text here..."
-                            rows="6" style="font-family: inherit;"></textarea>
-                        <button onclick="clearAll()" class="clear-btn btn btn-secondary mt-lg" style="width: 100%;">
+                        <textarea id="input-text" class="form-textarea"
+                            placeholder="Paste your blog article or speech text here..." rows="6"
+                            style="font-family: inherit;"></textarea>
+                        <button onclick="clearAll()" class="clear-btn btn btn-secondary mt-lg actions-btn"
+                            style="width: 100%;">
                             <svg class="code-option__button-svg" width="17" height="17" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                 <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd"
@@ -109,54 +209,64 @@
                             Clear All
                         </button>
                     </div>
-                    <div class="result-card">
-                        <div class="result-content" id="result" role="status" aria-live="polite">Your result will appear here...</div>
-                        <button onclick="copyResult()" class="copy-btn" id="copy-btn">
-                            <svg class="code-option__button-svg" width="13" height="17"
-                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                                <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd">
-                                    <path d="M5 5h7v11H5z"></path>
-                                    <path d="M1 15V1h10"></path>
-                                </g>
-                            </svg>
-                            Copy to Clipboard
-                        </button>
-                    </div>
+                    <section class="result-card" aria-live="polite" role="status">
+                        <div class="dynamic-analysis">
+                            Word: <span id="word">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Sentence: <span id="sentence">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Paragraph: <span id="paragraph">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Line: <span id="line">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Character (with space): <span id="char-with-space">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Character (without space): <span id="char-with-out-space">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Longest word: <span id="long-word">0</span>
+                        </div>
+                        <div class="dynamic-analysis">
+                            Shortest word: <span id="short-word">0</span>
+                        </div>
+                    </section>
                 </div>
-                <div class="grid grid-cols-auto ans" style="gap: var(--space-sm);">
-                    <button onclick="convertCase('word-count')" class="btn btn-primary"
-                        aria-label="Word counter from sentences">Count Words</button>
-                    <button onclick="convertCase('char-count-with-space')" class="btn btn-primary"
-                        aria-label="Character counter including spaces">Characters (withspaces)</button>
-                    <button onclick="convertCase('char-count-without-space')" class="btn btn-primary"
-                        aria-label="Character counter excluding spaces">Characters (without space)</button>
-                    <button onclick="convertCase('sentence-count')" class="btn btn-primary"
-                        aria-label="Sentence counter">Count Sentences</button>
-                    <button onclick="convertCase('paragraph-count')" class="btn btn-primary"
-                        aria-label="Paragraph counter">Count Paragraphs</button>
-                    <button onclick="convertCase('line-count')" class="btn btn-primary"
-                        aria-label="Line counter from paragraph">Count Lines</button>
-                    <button onclick="convertCase('unique-word-count')" class="btn btn-primary"
-                        aria-label="Unique word counter from sentences">Unique Words</button>
-                </div>
-            </section>
+
+            </div>
             <section class="card">
-                <h2 class="card-title">How to Use</h2>
+                <h2 class="card-title">How to Use the Text Analysis Tool</h2>
+
+                <p class="tool-description">
+                    The Text Analysis Tool helps you quickly evaluate written content by providing important statistics
+                    such as word count, sentence count, paragraph count, character counts, reading time, speaking time,
+                    and more. It is useful for writers, students, bloggers, editors, and marketers who want to
+                    understand the structure and readability of their text.
+                </p>
+
                 <div class="card-body">
                     <ol style="color: var(--color-text-secondary); line-height: 1.8; padding-left: var(--space-lg);">
-                        <li>Paste or type your text into the input box.</li>
-                        <li>Choose the statistic you want to calculate:</li>
-                        <ul>
-                            <li><strong>Count Words </strong>- counts the total number of words.</li>
-                            <li><strong>Characters (with spaces) </strong>- counts characters including spaces.</li>
-                            <li><strong>Characters(without spaces) </strong>- counts characters excluding spaces.</li>
-                            <li><strong>Count Sentences </strong>- counts the number of sentences.</li>
-                            <li><strong>Count Paragraphs </strong>- counts the number of paragraphs.</li>
-                            <li><strong>Count Lines </strong>- counts the number of text lines.</li>
-                            <li><strong>Unique Words </strong>- counts distinct words used in the text.</li>
-                        </ul>
-                        <li>The result will instantly appear in the result box.</li>
-                        <li>Click <strong>Copy to Clipboard </strong> to copy the result.</li>
+
+                        <li>Type or paste your text into the input box provided on the page.</li>
+
+                        <li>The tool automatically analyzes the content as you type and instantly calculates statistics
+                            such as word count, sentence count, paragraph count, and line count.</li>
+
+                        <li>View additional details including character counts (with and without spaces), longest word,
+                            shortest word, and estimated reading and speaking time.</li>
+
+                        <li>The analysis updates in real time whenever the text changes, so you can quickly monitor how
+                            your content evolves.</li>
+
+                        <li>Use the Clear button to remove the text and reset the analysis to start again with new
+                            content.</li>
+
+                        <li>You can also copy or export the analysis results if you need to use the data elsewhere.</li>
+
                     </ol>
                 </div>
             </section>
@@ -176,50 +286,50 @@
                 <div class="card-body">
                     <ul class="related-tools">
                         <li>
-                            <a href="tools/text-tools/case-converter.html" hreflang="en" 
+                            <a href="/case-converter.html" hreflang="en" target="_blank"
                                 aria-label="Open Case ConverterTool" title="Case Converter Tool">Case Converter</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/random-text-generator.html" hreflang="en" 
+                            <a href="/random-text-generator.html" hreflang="en" target="_blank"
                                 aria-label="Open Random Text Generator Tool"
                                 title="Free Random Text Generator Tool">Random Text Generator</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/find-replace.html" hreflang="en" 
+                            <a href="/find-replace.html" hreflang="en" target="_blank"
                                 aria-label="Open Find & Replace Tool" title="Find & Replace in bulk">Find & Replace</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/slug-generator.html" hreflang="en" 
+                            <a href="/slug-generator.html" hreflang="en" target="_blank"
                                 aria-label="Open Slug Generator Tool" title="Slug Generator">Slug Generator</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/text-calculator.html" hreflang="en" 
+                            <a href="/text-calculator.html" hreflang="en" target="_blank"
                                 aria-label="Open Text Calculator Tool" title=" None">Text Calculator</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/text-cleaner.html" hreflang="en" 
+                            <a href="/text-cleaner.html" hreflang="en" target="_blank"
                                 aria-label="Open text cleaner Tool" title="">Text Cleaner</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/text-line-tools.html" hreflang="en" 
+                            <a href="/text-line-tools.html" hreflang="en" target="_blank"
                                 aria-label="Open Text Line Tool" title="Free Text Line Tool">Text
                                 Line Tool</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/text-reverser.html" hreflang="en" 
+                            <a href="/text-reverser.html" hreflang="en" target="_blank"
                                 aria-label="Open Text Reverser Tool" title="Free Text reverser Tool">Text Reverse
                                 Tool</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/text-shuffle.html" hreflang="en" 
+                            <a href="/text-shuffle.html" hreflang="en" target="_blank"
                                 aria-label="Open Text Shuffle Tool" title="Free Text Shuffle Tool">Text Shuffle</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/text-sorter.html" hreflang="en" 
-                                aria-label="Open Text Sorter Tool" title="Free Text Sorter">Text Sorter</a>
+                            <a href="/text-sorter.html" hreflang="en" target="_blank" aria-label="Open Text Sorter Tool"
+                                title="Free Text Sorter">Text Sorter</a>
                         </li>
                         <li>
-                            <a href="tools/text-tools/whitespace-remover.html" hreflang="en" 
+                            <a href="/whitespace-remover.html" hreflang="en" target="_blank"
                                 aria-label="Open Whitespace remover Tool" title="Whitespace Remover Tool">Whitespace
                                 Remover</a>
                         </li>
@@ -271,7 +381,7 @@
                 <button class="category-close" id="categoryClose">&times;</button>
             </div>
             <div class="category-modal-body grid grid-cols-2 gap-lg">
-                <a href="tools/text-tools/" class="category-popup-card">
+                <a href="/text-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true" focusable="false">
@@ -282,7 +392,7 @@
                         </svg></div>
                     <span>Text Tools</span>
                 </a>
-                <a href="tools/developer-tools/" class="category-popup-card">
+                <a href="/developer-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true" focusable="false">
@@ -291,7 +401,7 @@
                         </svg></div>
                     <span>Developer Tools</span>
                 </a>
-                <a href="tools/security-tools/" class="category-popup-card">
+                <a href="/security-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true" focusable="false">
@@ -300,7 +410,7 @@
                         </svg></div>
                     <span>Security</span>
                 </a>
-                <a href="tools/utility-tools/" class="category-popup-card">
+                <a href="/utility-tools/" class="category-popup-card">
                     <div class="popup-icon"> <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true" focusable="false">
@@ -325,27 +435,27 @@
                 <div>
                     <h4 class="footer-section-title">Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="tools/text-tools/" class="footer-link">Text & Writing Tools</a></li>
-                        <li><a href="tools/developer-tools/" class="footer-link">Developer Tools</a></li>
-                        <li><a href="tools/security-tools/" class="footer-link">Security & Privacy</a></li>
-                        <li><a href="tools/utility-tools/" class="footer-link">Random & Utility</a></li>
+                        <li><a href="/text-tools/" class="footer-link">Text & Writing Tools</a></li>
+                        <li><a href="/developer-tools/" class="footer-link">Developer Tools</a></li>
+                        <li><a href="/security-tools/" class="footer-link">Security & Privacy</a></li>
+                        <li><a href="/utility-tools/" class="footer-link">Random & Utility</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="about.html" class="footer-link">About Us</a></li>
-                        <li><a href="contact.html" class="footer-link">Contact</a></li>
-                        <li><a href="sitemap.html" class="footer-link">Sitemap</a></li>
-                        <li><a href="changelog.html" class="footer-link">changelog</a></li>
+                        <li><a href="/about.html" class="footer-link">About Us</a></li>
+                        <li><a href="/contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="/sitemap.html" class="footer-link">Sitemap</a></li>
+                        <li><a href="/changelog.html" class="footer-link">changelog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="footer-section-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="footer-link">Terms & Conditions</a></li>
-                        <li><a href="disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="/privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
                     </ul>
                 </div>
             </div>
@@ -355,16 +465,16 @@
             </div>
         </section>
     </footer>
-    <script src="js/main.js" defer></script>
-    <script src="js/word-counter.js" defer></script>
-    <!-- FOR FOOTER YEAR UPDATE -->
-    <script src="js/main-j.js" defer></script>
-    <!-- FOR MODEL OPEN -->
-    <script src="js/main-m.js" defer></script>
-    <!-- FOR SEARCH BY INDEX -->
-    <script src="js/search-index.js" defer></script>
-    <!-- COPY AND CLEAR -->
-    <script src="js/main-c.js" defer></script>
-</body>
-</html>
 
+    <script src="/js/main.js" defer></script>
+    <script src="/js/word-counter.js" defer></script>
+    <!-- FOR FOOTER YEAR UPDATE -->
+    <script src="/js/main-j.js" defer></script>
+    <!-- FOR MODEL OPEN -->
+    <script src="/js/main-m.js" defer></script>
+    <!-- FOR SEARCH BY INDEX -->
+    <script src="/js/search-index.js" defer></script>
+</body>
+
+
+</html>
