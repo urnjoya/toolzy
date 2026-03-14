@@ -69,6 +69,15 @@ function convertCase(mode) {
                 .join('\n');
         }
             break;
+               // WORD SORT Z-A
+        case 'word-descending': {
+            const words = text.trim().split(/\s+/);
+
+            result = words
+                .sort((a, b) => b.localeCompare(a, undefined, { sensitivity: 'base' }))
+                .join(' ');
+        }
+        break;
 
         // sort by length word
         case 'sort-by-length-word': {
