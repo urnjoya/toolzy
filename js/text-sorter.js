@@ -12,24 +12,27 @@ function convertCase(mode) {
     switch (mode) {
         case 'sort-ascending':
             {
-                const words = text.trim().split(/\s+/);
-
-                result = words
+                const lines = text.split('\n').filter(line => line.trim() !== '');
+                // const words = text.trim().split(/\s+/);
+// words
+                result = lines
                     .sort((a, b) =>
                         a.localeCompare(b, undefined, { sensitivity: 'base' })
                     )
-                    .join(' ');
+                    // .join(' ');
+                .join('\n')
             }
             break;
         case 'sort-descending':
             {
-                const words = text.trim().split(/\s+/);
-
-                result = words
+                // const words = text.trim().split(/\s+/);
+const lines = text.split('\n').filter(line => line.trim() !== '');
+                result = lines
                     .sort((a, b) =>
                         b.localeCompare(a, undefined, { sensitivity: 'base' })
                     )
-                    .join(' ');
+                    // .join(' ');
+                .join('\n')
             }
             break;
         case 'remove-duplicates':
@@ -44,16 +47,19 @@ function convertCase(mode) {
                     return true;
                 });
 
-                result = uniqueWords.join(' ');
+                // result = uniqueWords.join(' ');
+                result = uniqueWords.join('\n');
             }
             break;
         case 'sort-by-length':
             {
-                const words = text.trim().split(/\s+/);
-
-                result = words
+                //const words = text.trim().split(/\s+/);
+const lines = text.split('\n').filter(line => line.trim() !== '');
+                result = lines
                     .sort((a, b) => a.length - b.length)
-                    .join(' ');
+                    //.join(' ');
+.join('\n')
+
             }
             break;
 
