@@ -80,7 +80,7 @@
         grid-template-columns: repeat(2, 1fr);
         /* Two boxes (rows) per column */
         grid-auto-flow: row;
-        gap: 10px;
+        gap: 30px;
         height: 50vh;
         margin-bottom: 2%;
     }
